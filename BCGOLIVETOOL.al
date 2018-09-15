@@ -1,6 +1,6 @@
-// RS -  BC Go-live Tool v.2.0 - 20180915
-// Based on Original release of Olof Simren -  Go-Live Tool
-page 50090 "Record Deletion"
+// RS -  BC Go-live Tool v.2.0.0.6 - 20180915
+// Based on Original release of Olof Simren -  Go-Live Tool, Range 50101..
+page 50101 "Record Deletion"
 {
     // version BCGOLIVE
     InsertAllowed = True; //Add records
@@ -51,7 +51,7 @@ page 50090 "Record Deletion"
     }
 }
 
-table 50090 "Record Deletion Table"
+table 50101 "Record Deletion Table"
 {
     // version BCGOLIVE
     fields
@@ -85,7 +85,7 @@ table 50090 "Record Deletion Table"
     end;
 }
 
-codeunit 50090 "Record Deletion Mgt."
+codeunit 50101 "Record Deletion Mgt."
 {
     // version BCGOLIVE  
     trigger OnRun()
@@ -111,7 +111,7 @@ codeunit 50090 "Record Deletion Mgt."
             repeat
                 Window.Update(1, Format(RecordDeletionTable."Table ID"));
                 RecRef.Open(RecordDeletionTable."Table ID");
-                RecRef.DeleteAll;  //** DELETE DATA FROM TABLE
+                RecRef.DeleteAll;  //** DELETE DATA FROM TABLES
                 RecRef.Close;
             until RecordDeletionTable.Next = 0;
 
