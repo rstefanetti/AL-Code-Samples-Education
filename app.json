@@ -1,0 +1,25 @@
+{
+  "id": "bf8dac69-7579-48bf-8df6-e21544280ad5",
+  "name": "BCGT",
+  "publisher": "Roberto Stefanetti",
+  "brief": "",
+  "description": "BC Go-Live Tool",
+  "version": "2.1.0.0",
+  "privacyStatement": "https://robertostefanettinavblog.com/",
+  "EULA": "https://robertostefanettinavblog.com/",
+  "help": "https://robertostefanettinavblog.com/",
+  "url": "http://localhost:7859/DynamicsNAV130/",
+  "logo": "C:\\TEMP\\BOB.JPG",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "12.0.0.0",
+  "application": "12.0.0.0",
+  "idRange": {
+    "from": 50101,
+    "to": 50149
+  },
+  "runtime": "1.0", 
+  "showMyCode": false,
+  "target":"Extension"  
+}
