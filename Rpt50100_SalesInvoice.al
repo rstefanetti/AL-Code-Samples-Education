@@ -1,6 +1,6 @@
-report 50100 "Sales - Invoice - SpesMedica"
+report 50100 "Sales Invoice - WL"
 {
-    // version SEDP,WL, SpesMedica,2018-10-01
+    // version SEDP, rpt WL, 2018-10-01
 
     DefaultLayout = Word;
     RDLCLayout = './Sales - Invoice WL.rdlc';
