@@ -5,7 +5,7 @@ report 50100 "Sales Invoice - WL"
     DefaultLayout = Word;
     RDLCLayout = './Sales - Invoice WL.rdlc';
     WordLayout = './Sales - Invoice WL.docx';
-    Caption = 'Sales - Invoice - SpesMedica';
+    Caption = 'Sales Invoice - WL';
     Permissions = TableData "Sales Shipment Buffer" = rimd;
     PreviewMode = PrintLayout;
     WordMergeDataItem = "Sales Invoice Header";
