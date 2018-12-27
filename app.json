@@ -1,0 +1,24 @@
+{
+  "id": "3f716ad5-4f20-48a1-ab15-42082899ecd8",
+  "name": "Barcode AL",
+  "publisher": "Roberto Stefanetti",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.17",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "showMyCode": true,
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  },
+  "runtime": "2.1"
+}
