@@ -1,0 +1,24 @@
+{
+  "id": "41f3492a-adc1-48bd-b7a3-aae6884e94a9",
+  "name": "XMLPorts - Runner",
+  "publisher": "RS",
+  "brief": "XMLPorts - Runner",
+  "description": "XMLPorts - Runner",
+  "version": "1.0.0.0",
+  "showMyCode": true,
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  },
+  "runtime": "2.1"
+}
