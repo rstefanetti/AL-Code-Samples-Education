@@ -1,0 +1,14 @@
+<PermissionSets>
+  <PermissionSet RoleID="50197" RoleName="50197">
+    <Permission>
+      <ObjectType>TableData</ObjectType>
+      <ObjectID>50197</ObjectID>
+      <ReadPermission>Yes</ReadPermission>
+      <InsertPermission>Yes</InsertPermission>
+      <ModifyPermission>Yes</ModifyPermission>
+      <DeletePermission>Yes</DeletePermission>
+      <ExecutePermission>Yes</ExecutePermission>
+      <SecurityFilter />
+    </Permission>
+  </PermissionSet>
+</PermissionSets>

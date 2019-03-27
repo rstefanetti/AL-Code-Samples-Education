@@ -1,0 +1,24 @@
+{
+  "id": "51f3492a-adc1-48bd-b7a3-aae6884e9435",
+  "name": "CountRecords",
+  "publisher": "SEDP",
+  "brief": "CountRecords",
+  "description": "CountRecords",
+  "version": "1.0.0.6",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50300
+  },
+  "runtime": "2.3",
+  "showMyCode": true
+}
