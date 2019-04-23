@@ -1,4 +1,4 @@
-//#1 - CREATE A NEW PRIFILE mapped to ROLE CENTER - duplicated from "Production Planner Role Center" in this case
+//#1 - CREATE A NEW PROFILE mapped to ROLE CENTER - duplicated from "Production Planner Role Center" in this case
 profile CUSTOMPRODUCTION
 {
     Description = 'CUSTOMPRODUCTION';
