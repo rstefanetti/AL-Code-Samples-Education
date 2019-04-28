@@ -193,7 +193,7 @@ Using the Ctrl+Shift+B shortcut to build your project will run the code analysis
 
 -------------------------------------------------------------------------------------------------------------------------------
 
-# - Prexif/Suffix General Rules
+# 3 - Prexif/Suffix General Rules
 •	The prefix/suffix must be at least 3 characters
 •	The object/field name must start or end with the prefix/suffix
 •	If a conflict arises, the one who registered the prefix/suffix always wins
@@ -214,7 +214,7 @@ Underscore
 
 -------------------------------------------------------------------------------------------------------------------------------
 
-# - Technical Validation Checklist
+# 4 - Technical Validation Checklist
 The following is a checklist of all requirements that you must meet before submitting an extension for validation. If you do not meet these mandatory requirements, your extension will fail validation.
 Enabling code analysis
 1.	Press Alt + A, Alt + L to create a new project.
@@ -224,5 +224,5 @@ Enabling code analysis
 
 -------------------------------------------------------------------------------------------------------------------------------
 
-# - Business Central Courses
+# 5 - Business Central Courses
 https://community.dynamics.com/365/b/learningcurriculum/archive/2019/02/22/list-of-courses-available-for-download
