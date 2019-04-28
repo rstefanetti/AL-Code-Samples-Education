@@ -14,8 +14,6 @@ Follow the syntax for file naming as shown below:
 Full objects	Extensions
 <Type><Id>.<ObjectName>.al	<Type><BaseId>-Ext<ObjectId>.<ObjectName>.al
 
-# Type map and Object Abbreviation
-Use the listed abbreviations for each type of object in the file naming:
 # Object Abbreviation
 Page	Pag
 Page Extension	PagExt
