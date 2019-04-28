@@ -190,3 +190,39 @@ The analyzers that are shipped with the AL Language extension are available thro
 The code analysis tools will run in the background. You will see the faulty expression underlined and the warning "There must be exactly one space character on each side of '+'." will be displayed if you mouse over the underlined code. You can also view the list of issues by selecting the View tab of Visual Studio Code and choosing the Problems option.
 
 Using the Ctrl+Shift+B shortcut to build your project will run the code analysis tools on the entire project and the detected issues will be displayed in the Output window of Visual Studio Code.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+# - Prexif/Suffix General Rules
+•	The prefix/suffix must be at least 3 characters
+•	The object/field name must start or end with the prefix/suffix
+•	If a conflict arises, the one who registered the prefix/suffix always wins
+•	For your own pages/tables/codeunits, you must set the prefix/suffix at the top object level
+•	For pages/tables in the base application of Business Central that you extend, you must set the prefix/suffix at the top object level
+•	For pages/tables of Business Central in the base application that you extend, you must also set at the control/field/action level
+Examples of acceptable prefix/suffix:
+No Delimiter
+•	FABSalespersonCode
+•	SalespersonCodeFAB
+Space
+•	"FAB Salesperson Code"
+•	"Salesperson Code FAB"
+Underscore
+•	FAB_Salesperson_Code
+•	Salesperson_Code_FAB
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+# - Technical Validation Checklist
+The following is a checklist of all requirements that you must meet before submitting an extension for validation. If you do not meet these mandatory requirements, your extension will fail validation.
+Enabling code analysis
+1.	Press Alt + A, Alt + L to create a new project.
+2.	Open the Command Palette Ctrl+Shift+P and choose either User Settings or Workspace Settings.
+3.	Copy the setting al.enableCodeAnalysis to the settings file and set it to true: "al.enableCodeAnalysis": true.
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+# - Business Central Courses
+https://community.dynamics.com/365/b/learningcurriculum/archive/2019/02/22/list-of-courses-available-for-download
