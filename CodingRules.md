@@ -1,4 +1,4 @@
-# AL-Samples - Coding Rules -  RECAP PAGE
+# AL Coding Rules - RECAP PAGE
 
 # 1 - Best Practices for AL
 This page defines some of the best practices to follow when writing AL code for Dynamics 365 Business Central. These best practices are additional to rules and guidelines that are caught during compilation of AL code. We recommend following these best practices when developing extensions in AL to ensure consistency and discoverability on file, object, and method naming, as well as better readability of written code.
@@ -16,7 +16,7 @@ Full objects	Extensions
 
 # Type map and Object Abbreviation
 Use the listed abbreviations for each type of object in the file naming:
-# Object	Abbreviation
+# Object Abbreviation
 Page	Pag
 Page Extension	PagExt
 Page Customization	PagCust
@@ -44,10 +44,8 @@ We recommend keeping your AL code properly formatted as follows:
 Use all lowercase letters for reserved language keywords. Built-in methods and types are not included in this rule because they are written using Pascal case.
 Use four spaces for indentation.
 Curly brackets are always on a new line. If there is one property, put it on a single line.
+
 The following example illustrates these formatting rules.
-
-
-Copy
 page 123 PageName
 {
     actions
@@ -100,7 +98,6 @@ Methods
 In AL, objects are referenced by their object name, not by their ID.
 Example
 
-Copy
 Page.RunModal(Page::"Customer Card", ...)
  
 var
@@ -112,9 +109,8 @@ For variables they must:
 Be named using PascalCase.
 Have the Temp prefix if they are temporary variables.
 Include the object name in the name (for objects).
-Example
 
-Copy
+Example
 TempCustomer: Record Customer temporary;
 Vendor: Record Vendor; 
 
@@ -125,9 +121,8 @@ Include a space after a semicolon when declaring multiple arguments.
 Semicolons can be used at the end of the signature/method header. If you use a snippet, the semicolons are not automatically added.
 Methods are named as variables using Pascal case. However, this is not a mandatory rule.
 There must be a blank line between method declarations. If you format your code using the AL Formatter tool, the auto-formatter sets the blank line between procedures.
-Example
 
-Copy
+Example
 local procedure MyProcedure(Customer: Record Customer; Int: Integer)
 begin
 end;
@@ -142,7 +137,6 @@ end;
 When calling a method, include one space after each command if you are passing multiple parameters. Parentheses must be specified when you are making a method call or system call such as: Init(), Modify(), Insert() etc.
 
 Example
-Copy
 MyProcedure();
 MyProcedure(1);
 MyProcedure(1, 2);
@@ -150,11 +144,10 @@ MyProcedure(1, 2);
 # Type definition (colon)
 When declaring a variable or a parameter, the name of that variable or parameter must be immediately followed by a colon, then a single space, and then the type of the variable/parameter as illustrated in the example below.
 
-Copy
 Var
     Number: Integer;
-
 local procedure MyProcedure(a: Integer; b: Integer): Integer 
+    
 -------------------------------------------------------------------------------------------------------------------------------
 
 # 2 - Enabling code analysis
