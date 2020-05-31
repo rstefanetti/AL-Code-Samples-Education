@@ -1,0 +1,137 @@
+//  EVENTS DEMO ****
+
+
+
+//#6 - Create a new event (INTEGRATION EVENT)
+//STEp 1
+codeunit 50129 MyPublishedEvents
+{
+    [IntegrationEvent(false, false)]
+    procedure OnAddressLineChanged(line: Text[100]);
+    begin
+    end;
+}
+
+//STEP 2
+pageextension 50130 MyCustomerCardExt extends "Customer Card"
+{
+    layout
+    {
+        modify(Address)
+        {
+            trigger OnBeforeValidate(); //prima di validare
+            var
+                Publisher: Codeunit 50129; //My Publish Codeunit
+            begin
+                Publisher.OnAddressLineChanged(Address); //rilascia evento CUSTOM
+            end;
+        }
+    }
+}
+
+//STEP 3
+codeunit 50131 MySubscribedEvents
+{
+    EventSubscriberInstance = StaticAutomatic;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"MyPublishedEvents", 'OnAddressLineChanged', '', true, true)]
+    procedure CheckAddressLine(line: Text[100]);
+    begin
+        if (STRPOS(line, '+') > 0) then begin
+            MESSAGE('Cannot use a plus sign (+) in the address [' + line + ']');
+        end;
+    end;
+}
+
+
+
+//#7 - Subscribe to EVENTS DEMO
+codeunit 50190 SubscribeToEvents  //CDU per sottoscrizione ad eventi
+{
+
+    EventSubscriberInstance = StaticAutomatic;
+
+    //PAGE Customer Card
+    [EventSubscriber(ObjectType::Page, Page::"Customer Card", 'OnBeforeValidateEvent', 'Address', true, true)]
+    local procedure CheckAddressLine(var Rec: Record Customer)
+    begin
+        if (STRPOS('Rec.Address', '+') > 0) then begin
+            MESSAGE('Cannot use a plus sign (+) in the address [' + 'Address' + ']');
+        end;
+    end;
+
+
+    //TABLE 27 Item
+    [EventSubscriber(ObjectType::Table, 27, 'OnAfterValidateEvent', 'Description', false, false)]
+    local procedure OnAfterValidateDescription(VAR Rec: Record Item; VAR xRec: Record Item; CurrFieldNo: Integer);
+    begin
+        Message('Vecchia Descrizione: ' + xRec.Description + 'Nuova Descrizione: ' + rec.Description + '.');
+    end;
+
+
+    //PAGE Production BOM - Controlla DIBA Certificata su uscita PAGE
+    [EventSubscriber(ObjectType::Page, Page::"Production BOM", 'OnClosePageEvent', '', true, true)]
+    local PROCEDURE OnChiudiDBProd(VAR Rec: Record 99000771);
+    BEGIN
+        IF Rec.Status <> Rec.Status::Certified THEN
+            ERROR('La distinta deve essere certificata!');
+
+    END;
+
+    //COMPLEX -- ROUTINE
+    [EventSubscriber(ObjectType::Table, 121, 'OnBeforeInsertInvLineFromRcptLineBeforeInsertTextLine', '', true, true)]
+    LOCAL PROCEDURE OnBeforeInsertInvLineFromRcptLineBeforeInsertTextLine(VAR PurchRcptLine: Record 121; VAR PurchLine: Record 39; NextLineNo: Integer; VAR Handled: Boolean);
+    VAR
+        LanguageManagement: Codeunit 43;
+        Descrizione: Text;
+        PostedWhseReceiptHeader: Record 7318;    //WAREHOUSE TABLES - HEADER
+        PostedWhseReceiptLine: Record 7319;      //WAREHOUSE TABLES - LINE
+        PurchRcptHeader: Record 120;
+        PurchaseHeader: Record 38;
+    BEGIN
+
+        IF PurchRcptLine."Order No." = '' THEN
+            EXIT;
+
+        IF NOT PurchaseHeader.GET(PurchaseHeader."Document Type"::Order, PurchRcptLine."Order No.") THEN
+            EXIT;
+
+        PurchaseHeader.GET(PurchaseHeader."Document Type"::Invoice, PurchLine."Document No.");
+        PurchRcptHeader.GET(PurchRcptLine."Document No.");
+
+        //LanguageManagement.SetGlobalLanguageByCode(PurchaseHeader."Language Code");
+
+        IF PurchaseHeader."Your Reference" <> '' THEN BEGIN
+            Descrizione :=
+              STRSUBSTNO(Text005,
+              PurchRcptHeader."Vendor Shipment No.",
+              PurchRcptLine."Order No.",
+              PurchaseHeader."Order Date",
+              PurchaseHeader."Your Reference",
+              PurchaseHeader."Document Date");
+        END
+        ELSE
+            Descrizione :=
+             STRSUBSTNO(Text006,
+             PurchRcptHeader."Vendor Shipment No.",
+             PurchRcptLine."Order No.",
+             PurchaseHeader."Order Date");
+
+        PurchLine.Description := '';
+        PurchLine.Description := COPYSTR(Descrizione, 1, 50);
+        IF STRLEN(Descrizione) > 50 THEN
+            PurchLine."Description 2" := COPYSTR(Descrizione, 51, 50);
+
+    END;
+
+    var
+        i: integer;
+        Text005: Text[100];
+        Text006: Text[100];
+
+}
+
+
+
+
+//
