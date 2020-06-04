@@ -19,8 +19,10 @@ pageextension 50105 ItemListCustom extends "Item List"
     trigger OnOpenPage()
     var 
       intInterface: Interface TestInt;     //Interface - new object !!   
+      cduCodeunit: Codeunit Test;          //Codeunit - implementing new Interface
     
     begin
+        intInterface := cduCodeunit;  // We tell the interface to use the cduCodeunit implementation of our functions.
         locPrintHallo(intInterface);
     end;
 
