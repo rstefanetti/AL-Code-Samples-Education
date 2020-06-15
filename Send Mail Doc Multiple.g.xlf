@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Send Mail Doc Multiple">
+    <body>
+      <group id="body">
+        <trans-unit id="PageExtension 2651767961 - Action 4109940647 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
+          <source>Send multiple attached Documents</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PurchOrderCardExt - Action SendOrder&amp;Attachment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2651767961 - NamedType 2951775720" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
+          <source>Email Sended</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PurchOrderCardExt - NamedType text001</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2651767961 - NamedType 3589472337" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
+          <source>Email address not present, go to User page and fill Contact Email field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PurchOrderCardExt - NamedType text002</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2651767961 - NamedType 4227168954" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
+          <source>User not identified</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PurchOrderCardExt - NamedType text003</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

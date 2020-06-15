@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="it-IT" original="Send Mail Doc Multiple">
+    <body>
+      <group id="body">
+        <trans-unit id="PageExtension 1852708639 - Action 4109940647 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
+          <source>Invia documenti allegati</source>
+          <target>Invia documenti allegati</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension OrdiniAcquistoCardExt - Action SendOrder&amp;Attachment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1852708639 - NamedType 2951775720" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
+          <source>Email inviata</source>
+          <target>Email inviata</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension OrdiniAcquistoCardExt - NamedType text001</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1852708639 - NamedType 3589472337" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
+          <source>Email address not present, go to User page and fill Contact Email field.</source>
+          <target>Indirizzo Email non trovat, andatre in pagina utenti e inserirlo nel campo Contact Email.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension OrdiniAcquistoCardExt - NamedType text002</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1852708639 - NamedType 4227168954" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
+          <source>User not identified</source>
+          <target>Utente non identificato/target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension OrdiniAcquistoCardExt - NamedType text003</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
