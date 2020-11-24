@@ -1,0 +1,18 @@
+pageextension 50000 PageExtension50000 extends "Production Planner Role Center"
+{
+  layout
+  {
+  }
+  actions
+  {
+    addafter("Subcontracting Transfers")
+    {
+      action("Business Unit List76867")
+      {
+        ApplicationArea = All;
+        CaptionML = ITA='Business Unit', ENU='Business Units';
+        RunObject = page "Business Unit List";
+      }
+    }
+  }
+}
