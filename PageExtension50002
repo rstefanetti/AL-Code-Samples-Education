@@ -1,0 +1,18 @@
+pageextension 50002 PageExtension50002 extends "Production Planner Role Center"
+{
+  layout
+  {
+  }
+  actions
+  {
+    addafter(SEDPItemTypes05782)
+    {
+      action("Inventory - Top 10 List56902")
+      {
+        ApplicationArea = All;
+        CaptionML = ITA='Inventory - Top 10 List';
+        RunObject = report "Inventory - Top 10 List";
+      }
+    }
+  }
+}
