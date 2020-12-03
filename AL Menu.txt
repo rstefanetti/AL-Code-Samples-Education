@@ -1,0 +1,102 @@
+Adding Menus to the Navigation and Actions Area
+
+#1 - Adding to the navigation menu
+The example below adds the root menu item called My Customers to the navigation menu of the Sales Order Processor Role Center. 
+
+pageextension 50120 ExtendNavigationArea extends "Order Processor Role Center"
+{
+
+    actions
+    {
+        addlast(Sections)
+        {
+            group("My Customers")
+            {
+                action("Customer Bank Account List")
+                {
+                    RunObject = page "Customer Bank Account List";
+                    ApplicationArea = All;
+                }
+                 action("Customer Ledger Entries")
+                {
+                    RunObject = page "Customer Ledger Entries";
+                    ApplicationArea = All;
+                }
+
+                // Creates a sub-menu
+                group("Sales Documents")
+                {
+                    action("Sales Document Entity")
+                    {
+                        ApplicationArea = All;
+                        RunObject = page "Sales Document Entity";
+                    }
+                    action("Sales Document Line Entity")
+                    {
+                        ApplicationArea = All;
+                        RunObject = page "Sales Document Line Entity";
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#2 - Adding to the navigation bar
+The second-level navigation is referred to as the navigation bar.
+
+...
+addlast(Embedding)
+{
+    action("Sales Cycles")
+    {
+        RunObject = page "Sales Cycles";
+        ApplicationArea = All;
+    }
+}
+
+
+
+#3 - Adding to actions
+The actions area displays the most important or most often used tasks and operations required by users. It contains links to pages, reports, and codeunits. The links are placed on the root-level, and they can be grouped in a submenu.
+
+...
+addlast(Creation)
+{
+    action("Sales Journal")
+    {
+        ApplicationArea = All;
+        RunObject = page "Sales Journal";
+    }
+}
+
+...
+addlast(Processing)
+{
+    group(Documents)
+    {
+        action("Sales Document Entity")
+        {
+            ApplicationArea = All;
+            RunObject = page "Sales Document Entity";
+        }
+        action("Sales Document Line Entity")
+        {
+            ApplicationArea = All;
+            RunObject = page "Sales Document Line Entity";
+        }
+    }
+}
+
+...
+addlast(Reporting)
+{
+    action("Customer Statistics")
+    {
+        ApplicationArea = All;
+        RunObject = report "Customer Sales Statistics";
+    }
+}
+
+
