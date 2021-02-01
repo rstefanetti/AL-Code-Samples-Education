@@ -1,0 +1,44 @@
+pageextension 50101 SalesInvoiceext extends "Sales Invoice"
+{
+    layout
+    {        
+
+    }
+
+    actions
+    {
+        addafter("Test Report")
+        {
+            
+            action("Download PDF Report")   //Action - Download PDF Report
+            {
+                ApplicationArea = All;
+                Image = ExportFile;
+                trigger OnAction()
+                var
+
+                    TempBlob_lRec: Codeunit "Temp Blob";   //Temp Blob Codeunit
+                    Out: OutStream;
+                    RecRef: RecordRef;
+                    FileManagement_lCdu: Codeunit "File Management";   //File Management Codeunit
+                    SalesHeader_lRec: Record "Sales Header";
+                begin
+                    TempBlob_lRec.CreateOutStream(Out, TEXTENCODING::UTF8);   //Outstream Encoding
+                    // Record Filter
+                    SalesHeader_lRec.Reset;                   
+                    SalesHeader_lRec.SetRange("No.", Rec."No.");
+                    SalesHeader_lRec.FindFirst();
+                    RecRef.GetTable(SalesHeader_lRec);
+                    
+                    // REPORT SAVEAS PDF
+                    REPORT.SAVEAS(50105, '', REPORTFORMAT::Pdf, Out, RecRef);    // Save report in TempBlob di recRef
+                    FileManagement_lCdu.BLOBExport(TempBlob_lRec, STRSUBSTNO('Proforma_%1.Pdf', "No."), TRUE);   // Export report in PDF
+                end;
+
+            }
+
+        }
+
+    } 
+
+}
