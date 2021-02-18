@@ -1,0 +1,27 @@
+{
+  "id": "51576254-0775-4d03-bf04-7c6e911bf375",
+  "name": "ALProject_DOTNET",
+  "publisher": "RS",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "17.0.0.0",
+  "application": "17.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50300
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://ALProject_DOTNET.com/help/",
+  "showMyCode": true,
+  "runtime": "6.0",
+  "target": "OnPrem"  
+}
