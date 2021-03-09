@@ -1,0 +1,29 @@
+actions
+{
+    area(Report)
+    {
+        action(Report 1)
+        {
+            RunObject = report "Report1";
+        }
+
+        // Adds a sub-menu called "Group1" to the Report menu. 
+        group(Group1)
+        {
+            // Adds the action "Report 2" to the My Label sub-menu. 
+            action(Action2)
+            {
+                RunObject = report "Report2";
+            }
+            // Adds a sub-menu called "Group2" to the Group1 sub-menu. 
+            group(Group2)
+            {
+                // Adds the action "Report 3" to the Group1 sub-menu. 
+                action(Action3)
+                {
+                    RunObject = report "Report3";
+                }
+            }
+        }
+    }
+}
