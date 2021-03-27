@@ -1,0 +1,27 @@
+{
+  "id": "76944bc2-b598-4925-b521-c1e96620a7c3",
+  "name": "Massive Item Attributes Update",
+  "publisher": "RS",
+  "brief": "",
+  "description": "Massive Item Attributes Update",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "features": [ "TranslationFile", "GenerateCaptions" ],
+  "EULA": "",
+  "help": "",
+  "url": "https://www.rs.it",
+  "logo": "Logo/LogoApp.png",
+  "dependencies": [
+  ],
+  "screenshots": [],
+  "platform": "17.0.0.0",
+  "application": "17.0.0.0",
+  "showMyCode": false,
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50500
+    }
+  ],
+  "runtime": "6.0"
+} 
