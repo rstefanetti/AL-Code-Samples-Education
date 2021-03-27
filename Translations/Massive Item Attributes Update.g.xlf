@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Massive Item Attributes Update">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 1135838765 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item attribute list</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item attribute list - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1135838765 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item no.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item attribute list - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1135838765 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item attribute list - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1135838765 - Field 3135334477 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item attribute list - Field Table ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1135838765 - Field 732681528 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Attribute ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item attribute list - Field Item Attribute ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1135838765 - Field 1580601681 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Attribute Value ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item attribute list - Field Item Attribute Value ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1135838765 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Attribute Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item attribute list - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1135838765 - Field 1131619133 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Attribute Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item attribute list - Field Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1135838765 - Field 1758538756 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Attribute numeric Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item attribute list - Field Numeric Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1135838765 - Field 3301323505 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item attribute list - Field Date Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1135838765 - Field 3543129988 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Blocked</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item attribute list - Field Blocked - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2047035676 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Items attribute list</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Items attribute list - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2047035676 - Action 3366482155 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import attribute from file</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Items attribute list - Action runxmlport - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 160615218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Attribute Value Mapping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query Item Attribute Value Mapping - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1800937764 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item attribute mass import</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Item attribute mass import - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1800937764 - NamedType 1978759664" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Processing......#1######################\</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Item attribute mass import - NamedType MsgProgress</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1800937764 - NamedType 2438170462" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 attribute inserted\%2 attribute modified\%3 Errors</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Item attribute mass import - NamedType MsgFinalRep</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1800937764 - NamedType 819578845" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Attribute %1 not found</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Item attribute mass import - NamedType MsgAttNotFound</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1800937764 - NamedType 634385404" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value attribute %1 not found</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Item attribute mass import - NamedType MsgAttValNotFound</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
