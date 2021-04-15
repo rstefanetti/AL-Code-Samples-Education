@@ -1,0 +1,14 @@
+Update Sub-form (Sub-Page) from Main Page to apply Filters
+
+Solution:
+To solve the above Problem statement we have to make use of the Currpage.Update() function which shall update the Subpage.
+As you can see in the below window a function is created Vendorfilter() on Subpage with the “vendor” parameter, in this function filter is added 
+for the vendor on the part page and then CurrPage.Update() is used. This function will update the Subpage with the vendor.
+
+Now, call this function on “OnValidate” trigger of the Main page field, here we have “Vendor” field on Main Page.
+
+Example
+CurrPage.<SubpageName>.Page.<FunctionName>(Rec.<FieldName>);
+
+In this example we have
+CurrPage.POLines.page.Vendorfilter(Rec.Vendor);
