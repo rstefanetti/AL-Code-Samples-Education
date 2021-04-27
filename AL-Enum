@@ -26,3 +26,23 @@ table 50120 TableWithRelation
 
     }
 }
+
+
+enumextension 50133 TypeEnumExt extends TypeEnum
+{
+    value(10; Resource) { }
+}
+
+
+
+tableextension 50135 TableWithRelationExt extends TableWithRelation
+{
+    fields
+    {
+
+        modify(Relation)
+        {
+            TableRelation = if (Type = const (Resource)) Resource;
+        }
+    }
+}
