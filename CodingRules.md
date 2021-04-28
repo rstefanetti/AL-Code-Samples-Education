@@ -7,34 +7,42 @@ This page defines some of the best practices to follow when writing AL code for 
 # Extension structure
 An extension is fully contained in a single folder. This folder often contains multiple files, such as app.json and launch.json files, perhaps an image file representing the extension's logo, various folders for source; "\src", other resources; "\res", and a test folder; "\test" folder. The extension does not need to follow a flat structure, which means that, depending on the amount of application files, additional folders can be used in the "src" or "test" folders to group objects based on their functionality, which can help make maintaining a large .al project easier.
 
+# Object naming
+Object names are prefixed. They start with the feature/group name, followed by the logical name as in these two examples:
+Intrastat extension validation codeunit for Denmark
+codeunit 123 "IntrastatDK Validation"
+
 # File naming
 Each file name must start with the corresponding type and ID, followed by a dot for full objects or a dash for extensions. The name of the object is written only with characters [A-Za-z0-9] and dot al is used for the file type.
 
-Follow the syntax for file naming as shown below:
-Full objects	Extensions
-<Type><Id>.<ObjectName>.al	<Type><BaseId>-Ext<ObjectId>.<ObjectName>.al
+# FILE NAMING EXAMPLES
+Object name	File name
+codeunit 70000000 MyPrefixSalesperson	MyPrefixSalesperson.Codeunit.al
+page 70000000 MyPrefixSalesperson	MyPrefixSalesperson.Page.al
+page 70000000 MyPrefixSalesperson extends "Customer Card"	MyPrefixSalesperson.PageExt.al
 
 # Object Abbreviation
-Page	Pag
-Page Extension	PagExt
-Page Customization	PagCust
-Codeunit	Cod
-Table	Tab
-Table Extension	TabExt
-XML Port	Xml
-Report	Rep
-Query	Que
-Enum	Enu
-Enum Extension	EnuExt
-Control Add-ins	ConAddin
+Use the listed abbreviations for each type of object in the file naming:
+Object	Abbreviation
 
-# Examples of file naming
-The following table illustrates how the file naming should look.
-
-Object name	File name
-codeunit 1000 "Job Calculate WIP"	Cod1000.JobCalculateWIP.al
-page 21 "Customer Card"	Pag21.CustomerCard.al
-page 1234 "MyPag" extends "Customer Card"	Pag21-Ext1234.MyPag.al
+Page	Page
+Page Extension	PageExt
+Page Customization	PageCust
+Codeunit	Codeunit
+Table	Table
+Table Extension	TableExt
+XML Port	Xmlport
+Report	Report
+Request Page	RequestPage
+Query	Query
+Enum	Enum
+Enum Extension	EnumExt
+Control Add-ins	ControlAddin
+Dotnet	Dotnet
+Profile	Profile
+Interface	Interface
+Permission Set	PermissionSet
+Permission Set Extension	PermissionSetExt
 
 # Formatting
 We recommend keeping your AL code properly formatted as follows:
@@ -74,21 +82,17 @@ page 123 PageName
 # Line length
 In general, there is no restriction on line length, but lengthy lines can make the code unreadable. We recommend that you keep your code easily scannable and readable.
 
-# Object naming
-Object names are prefixed. They start with the feature/group name, followed by the logical name as in these two examples:
-Intrastat extension validation codeunit for Denmark
-codeunit 123 "IntrastatDK Validation"
-
 # File structure
 Inside an .al code file, the structure for all objects must follow the sequence below:
 
 Properties
-Object-specific constructs such as:
+Object-specific constructs such as
 Table fields
 Page layout
 Actions
+Triggers
 Global variables
-Labels (old Text Constants)
+Labels
 Global variables
 Methods
 
@@ -146,8 +150,8 @@ Var
     Number: Integer;
 local procedure MyProcedure(a: Integer; b: Integer): Integer 
     
+    
 -------------------------------------------------------------------------------------------------------------------------------
-
 # 2 - Enabling code analysis
 First, create a simple project in AL.
 
@@ -192,7 +196,6 @@ The code analysis tools will run in the background. You will see the faulty expr
 Using the Ctrl+Shift+B shortcut to build your project will run the code analysis tools on the entire project and the detected issues will be displayed in the Output window of Visual Studio Code.
 
 -------------------------------------------------------------------------------------------------------------------------------
-
 # 3 - Prexif/Suffix General Rules
 •	The prefix/suffix must be at least 3 characters
 •	The object/field name must start or end with the prefix/suffix
@@ -213,7 +216,6 @@ Underscore
 
 
 -------------------------------------------------------------------------------------------------------------------------------
-
 # 4 - Technical Validation Checklist
 The following is a checklist of all requirements that you must meet before submitting an extension for validation. If you do not meet these mandatory requirements, your extension will fail validation.
 Enabling code analysis
@@ -223,6 +225,5 @@ Enabling code analysis
 
 
 -------------------------------------------------------------------------------------------------------------------------------
-
 # 5 - Business Central Courses
 https://community.dynamics.com/365/b/learningcurriculum/archive/2019/02/22/list-of-courses-available-for-download
