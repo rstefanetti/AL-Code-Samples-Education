@@ -1,0 +1,9 @@
+table 50110 MyTable
+{
+    fields
+    {
+        #pragma warning disable AL0468
+        field(1; TableWithLongIdentifierThatExceedsOurMax; Integer) { }
+        #pragma warning restore
+    }
+}
