@@ -1,6 +1,0 @@
-#region Ugly code - let's not look at this
-    procedure UglyCode()
-    begin
-        // No one should look at this
-    end;
-#endregion
