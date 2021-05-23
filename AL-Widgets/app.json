@@ -1,0 +1,24 @@
+{"id":"2b1e3c7c-6e76-4995-b6cb-d05b858fdbc7",
+"name":"Meteo sample Addin",
+"publisher":"RS",
+"version":"1.0.0.1",
+"brief":"Meteo sample Addin",
+"description":"",
+"privacyStatement":"https://robertostefanettinavblog.com/",
+"EULA":"",
+"help":"https://robertostefanettinavblog.com/",
+"url":"https://robertostefanettinavblog.com/",
+"logo":"",
+"dependencies":[]
+,
+"screenshots":[]
+,
+"platform":"18.0.0.0",
+"application":"18.0.0.0",
+"idRanges":[{"from":50100,
+"to":50300}
+]
+,
+"contextSensitiveHelpUrl":"https://robertostefanettinavblog.com/",
+"showMyCode":true,
+"runtime":"7.0"}
