@@ -1,0 +1,88 @@
+
+
+page 50100 RoleCenterHeadline
+{
+PageType = HeadLinePart;
+
+layout
+{
+    area(content)
+    {
+        field(Headline1; hdl1Txt)
+        {
+
+        }
+        field(Headline2; hdl2Txt)
+        {
+
+        }
+        field(Headline3; hdl3Txt)
+        {
+
+        }
+        field(Headline4; hdl4Txt)
+        {
+
+        }
+    }
+}
+
+var
+    hdl1Txt: Label 'This is headline 1';
+    hdl2Txt: Label 'This is headline 2';
+    hdl3Txt: Label 'This is headline 3';
+    hdl4Txt: Label 'This is headline 4';
+}
+
+
+field(Headline1; hdl1Txt)
+{
+    trigger OnDrillDown()
+    var
+        DrillDownURLTxt: Label 'https://go.microsoft.com/fwlink/?linkid=867580', Locked = True;
+    begin
+        Hyperlink(DrillDownURLTxt)
+    end;
+}
+
+
+{
+    field(Headline1; hdl1Txt)
+    {
+
+    }
+    field(Headline2; hdl2Txt)
+    {
+
+    }
+    field(Headline3; hdl3Txt)
+    {
+         Visible=false;
+    }
+    field(Headline4; hdl4Txt)
+    {
+    }
+}
+
+
+
+group(Group1)
+{
+    field(Headline1; hdl1Txt)
+    {
+    }
+    field(Headline2; hdl2Txt)
+    {
+
+    }
+    }
+group(Group2)
+{
+    Visible=false;
+    field(Headline3; hdl3Txt)
+    {
+    }
+    field(Headline4; hdl4Txt)
+    {
+    }
+}
