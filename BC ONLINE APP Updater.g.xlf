@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="BC ONLINE APP Updater">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 2943662309 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>COHUB Auth</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table COHUB Auth - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2943662309 - Field 3856621992 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ClientID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table COHUB Auth - Field ClientID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2943662309 - Field 1317552199 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ambiente</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table COHUB Auth - Field Environment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2943662309 - Field 3641927271 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table COHUB Auth - Field ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2943662309 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Password</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table COHUB Auth - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2943662309 - Field 2575460289 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Password</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table COHUB Auth - Field Password - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2943662309 - Field 2858539771 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TenantID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table COHUB Auth - Field TenantID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2943662309 - Field 3549826426 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>UserName</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table COHUB Auth - Field UserName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3353344470 - NamedType 1423931915" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 3353344470">
+          <source>https://api.businesscentral.dynamics.com/</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension COHUBext - NamedType ResourceURL</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3353344470 - Action 720454606 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1145113728">
+          <source>Update Apps</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension COHUBext - Action CallApi - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3353344470 - Control 849894472 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1145113728">
+          <source>nomeEnv</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension COHUBext - Control nomeEnv - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3353344470 - Control 849894472 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1145113728">
+          <source>Nome</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension COHUBext - Control nomeEnv - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

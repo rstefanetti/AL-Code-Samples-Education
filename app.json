@@ -1,0 +1,46 @@
+{
+  "id": "4906d54a-00cd-4575-8a3d-4bcbaa6907fd",
+  "name": "BC ONLINE APP Updater",
+  "publisher": "RS",
+  "brief": "BC ONLINE APP Updater",
+  "description": "BC ONLINE APP Updater",
+  "version": "1.0.0.0",
+  "privacyStatement": "https://robertostefanettinavblog.com/",
+  "EULA": "https://robertostefanettinavblog.com/",
+  "help": "https://robertostefanettinavblog.com/",
+  
+
+  "contextSensitiveHelpUrl": "https://robertostefanettinavblog.com/",  
+  "url": "https://robertostefanettinavblog.com/",
+  "logo": "Logo/LogoApp.png",
+  
+
+  "features": [ "TranslationFile", "GenerateCaptions" ],
+    
+  "screenshots": [],
+  "showMyCode": true,
+  "platform": "18.0.0.0",
+  "application": "18.0.0.0",
+  "dependencies": [
+    {
+      "id": "c512d720-63b9-4b26-b062-a0c09b4ed322",
+      "name": "Company Hub",
+      "version": "18.2.26217.26331",
+      "publisher": "Microsoft"
+    },
+    {
+      "id": "c1335042-3002-4257-bf8a-75c898ccb1b8",
+      "name": "Application",
+      "version": "18.0.0.0",
+      "publisher": "Microsoft"
+    }
+  ],
+
+  "idRanges": [
+    {
+      "from": 50001,
+      "to": 89000
+    }
+  ],
+  "runtime": "7.0"
+}
