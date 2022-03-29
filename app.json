@@ -1,0 +1,29 @@
+{
+  "id": "8ac0d038-d156-49f6-ac19-af87a8a2632a",
+  "name": "Free and Used Objects in BC license",
+  "publisher": "RS",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "https://robertostefanettinavblog.com/",
+  "url": "https://robertostefanettinavblog.com/",
+  "contextSensitiveHelpUrl": "https://robertostefanettinavblog.com/", 
+  "features": ["TranslationFile"],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "20.0.0.0",
+  "application": "20.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 59999
+    }
+  ],
+  "propagateDependencies": true,
+  "resourceExposurePolicy":{"allowDownloadingSource": true},
+  "target": "Cloud", 
+  "runtime":"9.0"
+
+}

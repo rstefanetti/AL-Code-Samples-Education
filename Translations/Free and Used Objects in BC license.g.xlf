@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Free and Used Objects in BC license">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 3903327338 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Temp objects in license</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Temp Objects in License - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3903327338 - Field 3711240756 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Object ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Temp Objects in License - Field Object ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3903327338 - Field 1418569422 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Object Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Temp Objects in License - Field Object Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3903327338 - Field 1085746399 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Object Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Temp Objects in License - Field Object Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3903327338 - Field 1085746399 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>,Table,,Report,,Codeunit,XMLport,MenuSuite,Page,Query,,,,,PageExtension,TableExtension,Enum,EnumExtension,,,PermissionSet,PermissionSetExtension,ReportExtension</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Temp Objects in License - Field Object Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 3903327338 - Field 3220827225 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Used</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Temp Objects in License - Field Used - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1618956314 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AllObj</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AllObj - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1618956314 - Control 3711240756 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Object ID field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AllObj - Control Object ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1618956314 - Control 1418569422 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Object Name field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AllObj - Control Object Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1618956314 - Control 1085746399 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Object Type field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AllObj - Control Object Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 935494845 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>License Permissions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page License Permissions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 935494845 - Control 3735914638 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Delete Permission field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page License Permissions - Control Delete Permission - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 935494845 - Control 480834248 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Execute Permission field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page License Permissions - Control Execute Permission - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 935494845 - Control 3088155792 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Insert Permission field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page License Permissions - Control Insert Permission - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 935494845 - Control 3767204390 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Limited Usage Permission field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page License Permissions - Control Limited Usage Permission - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 935494845 - Control 1682833869 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Modify Permission field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page License Permissions - Control Modify Permission - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 935494845 - Control 1085746399 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Object Type field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page License Permissions - Control Object Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 935494845 - Control 3135917451 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Read Permission field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page License Permissions - Control Read Permission - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1569293126 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Objects in License</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Objects in License - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1569293126 - Control 2423439956 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the id oggetto field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Objects in License - Control id oggetto - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1569293126 - Control 2707037392 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the nome oggetto field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Objects in License - Control nome oggetto - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1569293126 - Control 2334361529 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the tipo oggetto field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Objects in License - Control tipo oggetto - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1569293126 - Control 1788517576 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the usato field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Objects in License - Control usato - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1924762098 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export Used and Not Used Objects</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Export Objects in License - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1924762098 - Control 3904799447 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Object Types Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Export Objects in License - Control ObjectTypeFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1924762098 - Control 3904799447 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>,Table,,Report,,Codeunit,XMLport,MenuSuite,Page,Query,,,,,PageExtension,TableExtension,Enum,EnumExtension,,,PermissionSet,PermissionSetExtension,ReportExtension</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Export Objects in License - Control ObjectTypeFilter - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 1924762098 - Control 2432487110 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Objects ID (Number) Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Export Objects in License - Control ObjIDFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1924762098 - Control 1331043751 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Only Free Objects</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Export Objects in License - Control OnlyFreeID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1924762098 - Control 1491504858 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Only Used Objects</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Export Objects in License - Control OnlyUsedID - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
