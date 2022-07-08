@@ -1,0 +1,60 @@
+OBJECT Dataport 50097 XMLPort Export Struc
+{
+  OBJECT-PROPERTIES
+  {
+    Date=07/07/22;
+    Time=12:19:21;
+    Modified=Yes;
+    Version List=DEV01;
+  }
+  PROPERTIES
+  {
+    Import=No;
+    FieldStartDelimiter=<None>;
+    FieldEndDelimiter=<None>;
+    FieldSeparator=<TAB>;
+  }
+  DATAITEMS
+  {
+    { PROPERTIES
+      {
+        DataItemTable=Table2000000041;
+        ReqFilterFields=TableNo,TableName;
+      }
+      FIELDS
+      {
+        { 1    ;7    ;TableNo              }
+        { 9    ;7    ;"No."                }
+        { 17   ;30   ;TableName            }
+        { 48   ;30   ;FieldName            }
+        { 79   ;10   ;Type                 }
+        { 90   ;7    ;Len                  }
+        { 98   ;10   ;Class                }
+        { 109  ;10   ;Enabled              }
+        { 120  ;30   ;"Type Name"          }
+        { 151  ;80   ;"Field Caption"      }
+        { 232  ;7    ;RelationTableNo      }
+        { 240  ;7    ;RelationFieldNo      }
+        { 248  ;10   ;SQLDataType          }
+      }
+       }
+  }
+  REQUESTFORM
+  {
+    PROPERTIES
+    {
+      Width=9020;
+      Height=3410;
+    }
+    CONTROLS
+    {
+    }
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+
