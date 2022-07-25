@@ -25,3 +25,36 @@ table 50100 SalesInvoiceCueTable
         }
     }
 }
+
+
+cuegroup(SalesActionontainer)
+{
+    Caption='New Sales Invoice';
+                
+    actions
+    {
+
+        action(ActionName)
+        {
+            RunObject=page "Sales Invoice";
+            Image=TileNew;
+
+            trigger OnAction()
+            begin
+                        
+            end;
+        }
+    }
+}
+
+
+
+addlast(Creation)
+{
+    action("Sales Journal")
+    {
+        ApplicationArea = All;
+        RunObject = page "Sales Journal";
+    }
+}
+
