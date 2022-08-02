@@ -1,0 +1,27 @@
+About this walkthrough
+This walkthrough illustrates the following tasks:
+
+Developing a sample extension that uses codeunits, tables, card pages, list pages, navigate page (Assisted Setup) actions, and events and it includes tooltips and links to context-sensitive Help.
+
+Creating extension objects that can be used to modify page and table objects.
+
+Initializing the database during the installation of the extension.
+
+Developing a sample test that tests external calls to a service, events, permissions, actions, navigate page (Assisted Setup), and other modified pages.
+
+Running the sample test using the Test Tool.
+
+Prerequisites
+To complete this walkthrough, you will need:
+
+The Dynamics 365 Business Central tenant
+
+Visual Studio Code
+
+The AL Language extension for Visual Studio Code
+
+For more information on how to get started with your first extension for Dynamics 365 Business Central, see Getting Started. It is recommended to try out simpler examples, before starting this walkthrough.
+
+
+PROJECT
+https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-extension-advanced-example
