@@ -1,5 +1,10 @@
-# AL - Courses Samples
-AL Corses Samples
+**** AL Code Samples for Education ****
+AL Code examples for education
 
-AL Code examples for education  (little parts)
+#each brancj is a separate sample
+
+
+by RSB
+https://robertostefanettinavblog.com
+
 
