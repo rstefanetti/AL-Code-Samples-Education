@@ -1,0 +1,26 @@
+{
+  "id": "fa22756c-c81b-4c64-9323-6b477a8fb39a",
+  "name": "Telemetry APP",
+  "publisher": "RSB",
+  "brief": "Telemetry APP",
+  "description": "Telemetry APP",
+  "version": "1.0.0.4",
+  "screenshots": [],
+  "application": "20.0.0.0",
+  "platform": "1.0.0.0",
+  "propagateDependencies": true,
+      
+  "dependencies":  [   
+  ],
+
+  "features": ["TranslationFile", "GenerateCaptions", "GenerateLockedTranslations"],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  
+  "runtime":"9.2",
+  "target":"Cloud"
+}
+

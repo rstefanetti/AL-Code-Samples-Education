@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Telemetry APP">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 3052422099 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AltER App Ins Event TestData</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AltER App Ins Event TestData - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3052422099 - Field 3767142723 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EventText</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AltER App Ins Event TestData - Field EventText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3052422099 - Field 979564550 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Metric1Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AltER App Ins Event TestData - Field Metric1Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3052422099 - Field 3975123490 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Metric1Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AltER App Ins Event TestData - Field Metric1Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3052422099 - Field 2322814043 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Metric2Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AltER App Ins Event TestData - Field Metric2Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3052422099 - Field 1650394031 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Metric2Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AltER App Ins Event TestData - Field Metric2Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3052422099 - Field 759304404 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Metric3Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AltER App Ins Event TestData - Field Metric3Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3052422099 - Field 3785772032 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Metric3Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AltER App Ins Event TestData - Field Metric3Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3052422099 - Field 3807888963 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Property1Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AltER App Ins Event TestData - Field Property1Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3052422099 - Field 3610734663 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Property1Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AltER App Ins Event TestData - Field Property1Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3052422099 - Field 161751662 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Property2Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AltER App Ins Event TestData - Field Property2Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3052422099 - Field 3259110522 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Property2Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AltER App Ins Event TestData - Field Property2Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3052422099 - Field 2188153781 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Property3Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AltER App Ins Event TestData - Field Property3Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3052422099 - Field 2141107241 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Property3Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AltER App Ins Event TestData - Field Property3Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1214956586 - NamedType 3003898253" size-unit="char" translate="no" xml:space="preserve">
+          <source>https://dc.services.visualstudio.com/v2/track</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AltER App Insights SDK - NamedType URL</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3677512128 - NamedType 254108665" size-unit="char" translate="no" xml:space="preserve">
+          <source>5be7a45c-81b6-4505-affe-479b464da3e4</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AltER Test App Insights - NamedType apiKey</note>
+        </trans-unit>
+        <trans-unit id="Page 587629687 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Telemetry Feature</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Telemetry Feature - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 587629687 - Control 419426744 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This sample page allows you to test Feature Telemetry. If application insights connection string in app.json is filled in, running the Emit feature telemetry action will emit telemetry to you app insights account.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Telemetry Feature - Control Information - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 587629687 - Action 1424909962 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Running this action will emit telemetry to your application insights account. Notice all the extra common custom dimensions that are present for telemetry messages emitted by Feature Telemetry codeunit.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Telemetry Feature - Action EmitFeatureTelemetry - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 587629687 - Action 1424909962 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Emit feature telemetry</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Telemetry Feature - Action EmitFeatureTelemetry - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Application Insights</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Control 3973972165 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Event metrics</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Control EventMetrics - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Control 979564550 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Metric1 name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Control Metric1Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Control 3975123490 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Metric1 value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Control Metric1Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Control 2322814043 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Metric2 name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Control Metric2Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Control 1650394031 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Metric2 value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Control Metric2Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Control 759304404 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Metric3 name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Control Metric3Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Control 3785772032 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Metric3 value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Control Metric3Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Control 2176155224 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Event name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Control EventNameGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Control 3767142723 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Event name/Message/Page name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Control EventText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Control 897087231 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Event properties</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Control EventProperties - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Control 3807888963 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prop1 name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Control Property1Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Control 3610734663 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prop1 value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Control Property1Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Control 161751662 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prop2 name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Control Property2Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Control 3259110522 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prop2 value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Control Property2Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Control 2188153781 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prop3 name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Control Property3Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Control 2141107241 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prop1 value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Control Property3Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Action 926541133 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Emit track event</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Action TrackEvent - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Action 182281932 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Emit track exception</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Action TrackException - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Action 1769717819 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Emit track page view</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Action TrackPageView - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3677512128 - Action 73002242 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Emit track trace</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltER Test App Insights - Action TrackTrace - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3780012323 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sample Feature</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltERE Sample Feature - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3780012323 - Control 419426744 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This sample page allows you to test Feature Telemetry. If application insights connection string in app.json is filled in, running the Emit feature telemetry action will emit telemetry to you app insights account.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltERE Sample Feature - Control Information - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 3780012323 - Action 1424909962 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Running this action will emit telemetry to your application insights account. Notice all the extra common custom dimensions that are present for telemetry messages emitted by Feature Telemetry codeunit.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltERE Sample Feature - Action EmitFeatureTelemetry - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3780012323 - Action 1424909962 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Emit feature telemetry</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltERE Sample Feature - Action EmitFeatureTelemetry - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3283018752 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Telemetry Feature</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltERERREA Telemetry Feature - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3283018752 - Control 419426744 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This sample page allows you to test Feature Telemetry. If application insights connection string in app.json is filled in, running the Emit feature telemetry action will emit telemetry to you app insights account.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltERERREA Telemetry Feature - Control Information - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 3283018752 - Action 1424909962 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Running this action will emit telemetry to your application insights account. Notice all the extra common custom dimensions that are present for telemetry messages emitted by Feature Telemetry codeunit.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltERERREA Telemetry Feature - Action EmitFeatureTelemetry - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3283018752 - Action 1424909962 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Emit feature telemetry</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AltERERREA Telemetry Feature - Action EmitFeatureTelemetry - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 233515402 - Action 3164981891 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2901867346">
+          <source>Start My Process</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AltERCustomerList_ext - Action AltERStartMyprocess - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 233515402 - Action 3164981891 - Method 1377591017 - NamedType 2026798726" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 233515402">
+          <source>OH OH,, rilevati errori!</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AltERCustomerList_ext - Action AltERStartMyprocess - Method OnAction - NamedType lblError</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 233515402 - Action 3164981891 - Method 1377591017 - NamedType 3295181555" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 233515402">
+          <source>Processo completato senza errori</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AltERCustomerList_ext - Action AltERStartMyprocess - Method OnAction - NamedType lblSuccess</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
