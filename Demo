@@ -1,0 +1,8 @@
+When coding in AL, there are certain times when we need to avoid errors from stopping a specific process. So they have to be handled differently. 
+In this post, you will learn 3 ways to handle errors in Microsoft Dynamics 365 Business Central.
+
+- Try Functions
+- Handle Codeunit.Run
+- Collectible Errors
+
+
