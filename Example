@@ -1,0 +1,919 @@
+Chat GPT-3 di OpenAI
+La chat GPT-3 (Generative Pre-trained Transformer 3) è un modello di linguaggio di ultima generazione sviluppato da OpenAI. Si tratta di una delle maggiori reti neurali per il linguaggio naturale mai create, con una capacità di circa 175miliardi di parametri.
+
+Una delle principali peculiarità della chat GPT-3 è la sua capacità di generare testi di alta qualità in modo completamente automatico. Questo è possibile grazie all’utilizzo di tecniche di pre-allenamento su grandi quantità di dati e all’utilizzo di una struttura di modello nota come “transformer”. La chat GPT-3 è in grado di comprendere il contesto e di utilizzare le informazioni a sua disposizione per produrre risposte sensate e coerenti.
+
+https://chat.openai.com/
+
+Vediamo se questa tecnologia può essere utile per creare dei corsi, esercizi e codice in Microsoft AL Language. Ho fatto qualche test perchè Microsoft la utilizzerà a breve nel motore di ricerca di BING (come dalle news sotto), vediamo cosa può fare con qualche domanda mirata.
+
+Risultati immagini per Chat GPT logo 
+
+News from Microsoft!!
+“Microsoft will incorporate ChatGPT into its Bing search engine, according to a report from The Information. The OpenAI synthetic media chatbot will serve to answer questions directly instead of the traditional link list and could debut as soon as the end of March in an attempt to come out ahead of Google’s far more widely used search engine.
+
+Microsoft has already begun incorporating other OpenAI tools into Bing. The tech giant began making the DALL-E text-to-image service part of Microsoft 365 through the new Designer app and the upcoming Image Creator tool for both Bing and Edge. Google has plenty of large language model projects of its own in the works through Deepmind, but hasn’t made anything like ChatGPT available to the public.”
+
+La cosa sembra molto interessante, facciamo subito qualche test con Microsoft AL…
+
+Abbandonando un attimo Cortana…. sperando che non si offenda!!
+
+Ho provato a fare qualche test per vedere cosa può fare, è multi-lingua, in questo caso proviamo usando l’italiano.
+
+TEST Microsoft AL con GPT-3
+Scenario del test:
+
+Creazione di una APP per leggere una pagina web e salvarla su Excel; APP creata chiedendo alla chat di scrivere il codice per noi
+Le domande sono rivolte alla chat ChatGPT per la creazione del codice in Linguaggio AL in modo da ottenere le relative soluzioni proposte
+NOTA: La chat salva lo storico si tutte le interazioni e permette di partizionare le richieste in modo da andare al dettaglio massimo della richieste; in pratica non esce mai dal contesto e si auto-istruisce; facendo le domande giuste si ottengono discrete ed accettabili risposte.
+
+https://chat.openai.com/chat
+
+Sviluppo del Test
+Domanda\Risposta
+
+#1 – Crea una codeunit in linguaggio Microsoft AL per leggere da una pagina web e salvare i dati contenuti nella pagina web su excel, crea il codice per farlo
+
+Per creare una codeunit in linguaggio Microsoft AL che permetta di leggere da una pagina web e salvare i dati contenuti su un file Excel, puoi utilizzare il seguente codice:
+
+codeunit 50100 ImportaDatiDaPaginaWeb
+
+{
+
+procedure ImportaDatiDaPaginaWeb(url: Text; nomeFoglio: Text; nomeFile: Text)
+
+var
+
+httpClient: HttpClient;
+
+html: Text;
+
+excel: DotNet “‘Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'”;
+
+workbook: excel.Workbook;
+
+worksheet: excel.Worksheet;
+
+begin
+
+httpClient.Initialize;
+
+html := httpClient.Get(url).ContentAsString;
+
+excel.Initialize;
+
+workbook := excel.Workbooks.Add;
+
+worksheet := workbook.Worksheets.Item[1];
+
+worksheet.Name := nomeFoglio;
+
+worksheet.Cells[1, 1] := html;
+
+excel.Visible := false;
+
+workbook.SaveAs(nomeFile);
+
+excel.Quit;
+
+end;
+
+}
+
+Questa codeunit prende come input l’URL della pagina web da leggere, il nome del foglio Excel in cui salvare i dati e il nome del file Excel. Utilizza l’oggetto HttpClient e la funzione Get per leggere il contenuto della pagina web, quindi utilizza l’oggetto Microsoft.Office.Interop.Excel.Application per creare un nuovo file Excel, aggiungere un nuovo foglio di lavoro e inserire il contenuto della pagina web nel foglio. Infine, salva il file Excel e chiude l’applicazione Excel.
+
+Considerazioni:
+
+Buona l’idea generale su come farlo, alcuni errori nelle dichiarazioni delle classi .net, ha mischiato un po’ di tecnologie.
+
+Andrebbe modificato in questo modo
+
+// Excel interop declarations
+
+assembly(Microsoft.Office.Interop.Excel)
+
+{
+
+Version = ‘15.0.0.0’;
+
+Culture = ‘neutral’;
+
+PublicKeyToken = ’71e9bce111e9429c’;
+
+type(Microsoft.Office.Interop.Excel.ApplicationClass; AppClass) { }
+
+type(Microsoft.Office.Interop.Excel.Application; xlApp) { }
+
+type(Microsoft.Office.Interop.Excel.Worksheet; xlSheet) { }
+
+type(Microsoft.Office.Interop.Excel.Workbook; xlWorkbook) { }
+
+procedure ImportaDatiDaPaginaWeb(url: Text; nomeFoglio: Text; nomeFile: Text)
+
+var
+
+httpClient: HttpClient;
+
+html: Text;
+
+//excel: DotNet ‘”Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c”‘;
+
+lxlApps: DotNet xlApp;
+
+lxlSheet: DotNet xlSheet;
+
+lxlWorkbook: DotNet xlWorkbook;
+
+etc etc.
+
+#2 – Gestisci il try catch nelle procedura appena creata
+Per gestire gli errori in una procedura che legge una pagina web e salva i dati contenuti su un file Excel, puoi utilizzare il costrutto TRY…CATCH come mostrato di seguito:
+
+codeunit 50100 ImportaDatiDaPaginaWeb
+
+{
+
+procedure ImportaDatiDaPaginaWeb(url: Text; nomeFoglio: Text; nomeFile: Text)
+
+var
+
+httpClient: HttpClient;
+
+html: Text;
+
+excel: DotNet “‘Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'”;
+
+workbook: excel.Workbook;
+
+worksheet: excel.Worksheet;
+
+begin
+
+try
+
+httpClient.Initialize;
+
+html := httpClient.Get(url).ContentAsString;
+
+excel.Initialize;
+
+workbook := excel.Workbooks.Add;
+
+worksheet := workbook.Worksheets.Item[1];
+
+worksheet.Name := nomeFoglio;
+
+worksheet.Cells[1, 1] := html;
+
+excel.Visible := false;
+
+workbook.SaveAs(nomeFile);
+
+excel.Quit;
+
+catch
+
+// Gestisci l’errore qui
+
+Message(‘Si è verificato un errore durante il download dei dati dalla pagina web o il salvataggio del file Excel.’);
+
+end;
+
+end;
+
+}
+
+Il costrutto TRY…CATCH permette di eseguire un blocco di codice (il codice che legge la pagina web e salva i dati su Excel) e, in caso di errore, gestire l’errore nel blocco di codice del costrutto CATCH. In questo caso, viene mostrato un messaggio di errore.
+
+Considerazioni
+anche qui cè da lavorare, occorre sistemare in questo modo, non stiamo usando C#
+
+[TryFunction]
+
+local procedure MyTryMethod()
+
+begin
+
+error(‘An error occurred during the operation’);
+
+end;
+
+trigger OnRun()
+
+begin
+
+if MyTryMethod then
+
+message(‘Everything went well’)
+
+else
+
+message(‘Something went wrong’)
+
+end;
+
+#3 – Oltre a try catch gestisci un log errori per la procedura appena creata, crea una tabella per il LOG e la procedura per gestirli
+
+Modifica la procedura per scrivere gli errori nel log:
+
+codeunit 50100 ImportaDatiDaPaginaWeb
+
+{
+
+procedure ImportaDatiDaPaginaWeb(url: Text; nomeFoglio: Text; nomeFile: Text)
+
+var
+
+httpClient: HttpClient;
+
+html: Text;
+
+excel: DotNet “‘Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'”;
+
+workbook: excel.Workbook;
+
+worksheet: excel.Worksheet;
+
+logErrori: Record LogErrori;
+
+begin
+
+try
+
+httpClient.Initialize;
+
+html := httpClient.Get(url).ContentAsString;
+
+excel.Initialize;
+
+workbook := excel.Workbooks.Add;
+
+worksheet := workbook.Worksheets.Item[1];
+
+worksheet.Name := nomeFoglio;
+
+worksheet.Cells[1, 1] := html;
+
+excel.Visible := false;
+
+workbook.SaveAs(nomeFile);
+
+excel.Quit;
+
+catch
+
+// Scrive l’errore nel log
+
+logErrori.Clear;
+
+logErrori.Data := CURRENTDATE;
+
+logErrori.Ora := CURRENTTIME;
+
+logErrori.Errore := ‘Si è verificato un errore durante il download dei dati dalla pagina web o il salvataggio del file Excel.’;
+
+logErrori.Insert;
+
+// Mostra un messaggio di errore
+
+Message(‘Si è verificato un errore durante il download dei dati dalla pagina web o il salvataggio del file Excel.’);
+
+end;
+
+end;
+
+}
+
+Il codice utilizza la tabella LogErrori per scrivere gli errori nel log, includendo la data e l’ora dell’errore e il messaggio di errore. In questo modo, puoi tenere traccia degli errori che si verificano durante l’esecuzione della procedura.
+
+Considerazioni
+
+Buona l’idea, alcuni errori
+
+logErrori.Data := CURRENTDATE;
+
+logErrori.Ora := CURRENTTIME;
+
+Crea una tabella per il log degli errori:
+
+table 50100 LogErrori
+
+{
+
+DataType Date;
+
+DataType Time;
+
+DataType Text[250];
+
+}
+
+Considerazioni
+
+Qua non ci siamo, da rivedere.
+
+#4 – Ora crea una pagina di tipo list page in Microsoft AL language per visualizzare gli errori rilevati dalla procedura sopra
+Per creare una pagina di tipo list page in Microsoft AL language che permetta di visualizzare gli errori rilevati dalla procedura sopra, puoi seguire questi passi:
+
+Aggiungi il seguente codice alla pagina “ErroriLogListPage.al”:
+
+page 50100 ErroriLogListPage
+
+{
+
+PageType = List;
+
+layout
+
+{
+
+area(Content)
+
+{
+
+repeat(ErroriLog)
+
+{
+
+field(Data; “Data”) { }
+
+field(Ora; “Ora”) { }
+
+field(Errore; “Errore”) { }
+
+}
+
+}
+
+}
+
+}
+
+#5 – Crea una Azure Function per leggere una pagina web e salvare i dati contenuti nella pagina su excel, poi crea il codice in Microsoft AL per richiamare l’azure function appena creata
+Per creare una Azure Function in grado di leggere una pagina web e salvare i dati contenuti su un file Excel, puoi seguire questi passi:
+
+Accedi al portale di Azure e seleziona “Crea una risorsa” nella barra di sinistra.
+Cerca “Azure Function” e selezionalo nei risultati della ricerca.
+Nella pagina di creazione della risorsa Azure Function, seleziona le opzioni desiderate per la tua funzione, come il nome, il gruppo di risorse, il piano di servizio e la sottoscrizione. Quindi fai clic su “Crea”.
+Nel portale di Azure, vai alla sezione “Funzioni” del tuo gruppo di risorse e seleziona la funzione appena creata.
+Nella sezione “Impostazioni” della funzione, fai clic su “Aggiungi un nuovo set di chiavi di integrazione”. Assegna un nome al set di chiavi e seleziona “Chiave primaria” come tipo di chiave. Quindi fai clic su “Salva”.
+Nella sezione “Codice” della funzione, seleziona “C# HttpTrigger” come modello di funzione.
+Sostituisci il codice esistente con il seguente codice, sostituendo il valore di “url” con l’URL della pagina web da leggere e il valore di “nomeFile” con il percorso del file Excel in cui salvare i dati:
+Considerazioni
+
+Ottima la spiegazione e lo sviluppo del codice
+
+#r “Microsoft.Office.Interop.Excel”
+
+using System.Net;
+
+using Microsoft.Office.Interop.Excel;
+
+public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
+
+{
+
+// Lettura dei dati dalla pagina web
+
+var client = new WebClient();
+
+var data = client.DownloadData(“url”);
+
+var html = System.Text.Encoding.UTF8.GetString(data);
+
+// Salvataggio dei dati su file Excel
+
+var excelApp = new Application();
+
+var workbook = excelApp.Workbooks.Add();
+
+var worksheet = workbook.Worksheets.Item[1];
+
+worksheet.Cells[1, 1] = html;
+
+excelApp.Visible = false;
+
+workbook.SaveAs(“nomeFile”);
+
+excelApp.Quit();
+
+return req..
+
+#6 Riscrivi solo il codice della funzione, senza la spiegazione, non mi serve!
+Ecco il codice della funzione Azure che legge una pagina web e salva i dati su un file Excel:
+
+#r “Microsoft.Office.Interop.Excel”
+
+using System.Net;
+
+using Microsoft.Office.Interop.Excel;
+
+public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
+
+{
+
+var client = new WebClient();
+
+var data = client.DownloadData(“url”);
+
+var html = System.Text.Encoding.UTF8.GetString(data);
+
+var excelApp = new Application();
+
+var workbook = excelApp.Workbooks.Add();
+
+var worksheet = workbook.Worksheets.Item[1];
+
+worksheet.Cells[1, 1] = html;
+
+excelApp.Visible = false;
+
+workbook.SaveAs(“nomeFile”);
+
+excelApp.Quit();
+
+return req.CreateResponse(HttpStatusCode.OK);
+
+}
+
+Considerazioni
+
+Ha fatto quanto richiesto, velocemente senza spiegare nulla.
+
+Per richiamare questa funzione in Microsoft AL, puoi utilizzare il seguente codice:
+
+codeunit 50100 ImportaDatiDaPaginaWeb
+
+{
+
+procedure ImportaDatiDaPaginaWeb(url: Text; nomeFile: Text)
+
+var
+
+httpClient: HttpClient;
+
+content: HttpContent;
+
+response: HttpResponseMessage;
+
+apiKey: Text;
+
+query: Text;
+
+begin
+
+apiKey := ‘{inserisci qui la chiave primaria del set di chiavi di integrazione}’;
+
+query := ‘?url=’ + url + ‘&nomeFile=’ + nomeFile;
+
+httpClient.BaseAddress := ‘https://{inserisci qui il nome della tua funzione}.azurewebsites.net/api/ImportaDatiDaPaginaWeb’;
+
+content.Headers.Add(‘Content-Type’, ‘application/json’);
+
+content.Headers.Add(‘x-functions-key’, apiKey);
+
+response := httpClient.PostAsync(query, content).Result;
+
+end;
+
+}
+
+Considerazioni
+
+Implementazione più che ragionevole
+
+#7 – gestisci il try catch nella funzione appena pubblicata
+Per gestire il try-catch nella funzione Azure che legge una pagina web e salva i dati su un file Excel, puoi utilizzare il seguente codice:
+
+#r “Microsoft.Office.Interop.Excel”
+
+using System.Net;
+
+using Microsoft.Office.Interop.Excel;
+
+public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
+
+{
+
+try
+
+{
+
+var client = new WebClient();
+
+var data = client.DownloadData(“url”);
+
+var html = System.Text.Encoding.UTF8.GetString(data);
+
+var excelApp = new Application();
+
+var workbook = excelApp.Workbooks.Add();
+
+var worksheet = workbook.Worksheets.Item[1];
+
+worksheet.Cells[1, 1] = html;
+
+excelApp.Visible = false;
+
+workbook.SaveAs(“nomeFile”);
+
+excelApp.Quit();
+
+return req.CreateResponse(HttpStatusCode.OK);
+
+}
+
+catch (Exception e)
+
+{
+
+log.Error(e.Message);
+
+return req.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+
+}
+
+}
+
+In questo modo, in caso di errore durante l’esecuzione della funzione, verrà inserito un messaggio di errore nel log delle funzioni Azure e verrà restituito un codice di stato HTTP “Internal Server Error” insieme al messaggio di errore.
+
+Considerazioni
+
+Direi che ci siamo
+
+..alla fine..
+
+#8 Come posso richiamare la Chat GPT-3 da Microsoft AL language? scrivi il codice grazie!
+GPT-3 (Generative Pre-trained Transformer 3) è un modello di linguaggio di grandi dimensioni sviluppato da OpenAI. Non è possibile richiamare direttamente GPT-3 da Microsoft AL language, poiché GPT-3 viene eseguito come servizio cloud e non è disponibile come libreria da utilizzare in un codice di qualsiasi linguaggio.
+
+Per utilizzare GPT-3, devi inviare una richiesta HTTP POST al servizio GPT-3 utilizzando una libreria HTTP come System.Net.Http.HttpClient in Microsoft AL. La richiesta deve includere il testo da elaborare e le impostazioni desiderate per la generazione del testo. GPT-3 risponderà con il testo generato in base alle impostazioni specificate nella richiesta.
+
+Ecco un esempio di come potresti utilizzare GPT-3 in Microsoft AL:
+
+codeunit 50100 GPT3Test
+
+{
+
+procedure TestGPT3
+
+var
+
+httpClient: HttpClient;
+
+content: HttpContent;
+
+response: HttpResponseMessage;
+
+apiKey: Text;
+
+query: Text;
+
+begin
+
+apiKey := ‘{inserisci qui la tua chiave API di OpenAI}’;
+
+query := ‘{inserisci qui la tua query di richiesta GPT-3}’;
+
+httpClient.BaseAddress := ‘https://api.openai.com/v1/’;
+
+content.Headers.Add(‘Content-Type’, ‘application/json’);
+
+content.Headers.Add(‘Authorization’, ‘Bearer ‘ + apiKey);
+
+response := httpClient.PostAsync(query, content).Result;
+
+// gestisci la risposta di GPT-3 come desideri
+
+end;
+
+}
+
+#9 Proviamo a fargli creare una traccia di un esercizio di sviluppo
+Gestione di un campionato di basket in Microsoft AL language, modello di implementazione
+
+Per gestire un campionato di basket in Microsoft AL, potresti utilizzare il modello di implementazione seguente:
+
+Crea una tabella “Squadre” per memorizzare le informazioni delle squadre, come il nome, il logo e il numero di vittorie e sconfitte.
+Crea una tabella “Partite” per memorizzare le informazioni delle partite, come la data, l’ora, le squadre coinvolte e il risultato.
+Crea una tabella “Giocatori” per memorizzare le informazioni dei giocatori, come il nome, il numero di maglia e il ruolo.
+Crea una relazione tra le tabelle “Squadre” e “Giocatori” per indicare a quale squadra appartiene ogni giocatore.
+Crea una pagina per visualizzare il calendario delle partite e i risultati delle partite giocate.
+Crea una pagina per visualizzare la classifica del campionato, che viene aggiornata automaticamente in base ai risultati delle partite.
+Crea una pagina per visualizzare le statistiche dei giocatori, come il numero di punti segnati, rimbalzi e assist in ogni partita.
+Considerazioni
+
+Dire che ci siamo, molto utile per questo tipo di attività.
+
+iniziamo a vedere anche come crea il codice…
+
+Crea il codice per una tabella “Squadre” per memorizzare le informazioni delle squadre, come il nome, il logo e il numero di vittorie e sconfitte, metti il codice in un blocco.
+
+Ecco il codice per creare una tabella “Squadre” in Microsoft AL:
+
+table 50025 Squadre
+
+{
+
+Caption = ‘Squadre’;
+
+DataClassification = CustomerContent;
+
+fields
+
+{
+
+field(1; “Name”; Text[50])
+
+{
+
+Caption = ‘Nome’;
+
+DataClassification = CustomerContent;
+
+}
+
+field(2; “Logo”; Media)
+
+{
+
+Caption = ‘Logo’;
+
+DataClassification = CustomerContent;
+
+}
+
+field(3; “NumVittorie”; Integer)
+
+{
+
+Caption = ‘Numero di vittorie’;
+
+DataClassification = CustomerContent;
+
+}
+
+field(4; “NumSconfitte”; Integer)
+
+{
+
+Caption = ‘Numero di sconfitte’;
+
+DataClassification = CustomerContent;
+
+}
+
+}
+
+keys
+
+{
+
+key(PK; “Name”)
+
+{
+
+Clustered = true;
+
+}
+
+}
+
+}
+
+Ok!
+
+Crea il codice per una tabella “Partite” per memorizzare le informazioni delle partite, come la data, l’ora, le squadre coinvolte e il risultato.
+
+Ecco il codice per creare una tabella “Partite” in Microsoft AL:
+
+table 50101 Partite
+
+{
+
+Caption = ‘Partite’;
+
+DataClassification = CustomerContent;
+
+fields
+
+{
+
+field(1; “Data”; Date)
+
+{
+
+Caption = ‘Data’;
+
+DataClassification = CustomerContent;
+
+}
+
+field(2; “Ora”; Time)
+
+{
+
+Caption = ‘Ora’;
+
+DataClassification = CustomerContent;
+
+}
+
+field(3; “SquadraCasa”; Text)
+
+{
+
+Caption = ‘Squadra di casa’;
+
+DataClassification = CustomerContent;
+
+ReferencedTable = Squadre;
+
+}
+
+field(4; “SquadraOspite”; Text)
+
+{
+
+Caption = ‘Squadra ospite’;
+
+DataClassification = CustomerContent;
+
+ReferencedTable = Squadre;
+
+}
+
+field(5; “PunteggioCasa”; Integer)
+
+{
+
+Caption = ‘Punteggio squadra di casa’;
+
+DataClassification = CustomerContent;
+
+}
+
+field(6; “PunteggioOspite”; Integer)
+
+{
+
+Caption = ‘Punteggio squadra ospite’;
+
+DataClassification = CustomerContent;
+
+}
+
+}
+
+keys
+
+{
+
+key(PK; “Data”; “Ora”; “SquadraCasa”; “SquadraOspite”)
+
+{
+
+Clustered = true;
+
+}
+
+}
+
+}
+
+Considerazioni
+
+Qua abbiamo qualche errore con i table relation e con le chiavi
+
+keys
+
+{
+
+key(PK; “Data”, “Ora”, “SquadraCasa”, “SquadraOspite”)
+
+per il resto OK!
+
+Crea il codice per una tabella “Giocatori” per memorizzare le informazioni dei giocatori, come il nome, il numero di maglia e il ruolo.
+
+Ecco il codice per creare una tabella “Giocatori” in Microsoft AL:
+
+table 50102 Giocatori
+
+{
+
+Caption = ‘Giocatori’;
+
+DataClassification = CustomerContent;
+
+fields
+
+{
+
+field(1; “Name”; Text)
+
+{
+
+Caption = ‘Nome’;
+
+DataClassification = CustomerContent;
+
+}
+
+field(2; “NumMaglia”; Integer)
+
+{
+
+Caption = ‘Numero di maglia’;
+
+DataClassification = CustomerContent;
+
+}
+
+field(3; “Ruolo”; Text)
+
+{
+
+Caption = ‘Ruolo’;
+
+DataClassification = CustomerContent;
+
+}
+
+}
+
+keys
+
+{
+
+key(PK; “Name”)
+
+{
+
+Clustered = true;
+
+}
+
+}
+
+}
+
+Creare 2 pagine in Microsoft AL, una di tipo list page ed una di tipo card page per permettere la gestione delle squadre
+
+Per creare una pagina di tipo “list page” in Microsoft AL che permetta di gestire le squadre, puoi utilizzare il codice seguente:
+
+page 50035 Squadre
+
+{
+
+Caption = ‘Squadre’;
+
+SourceTable = Squadre;
+
+PageType = List;
+
+layout
+
+{
+
+area(Content)
+
+{
+
+group(General)
+
+{
+
+field(“Name”; Name)
+
+{
+
+ApplicationArea = All;
+
+}
+
+field(“Logo”; Logo)
+
+{
+
+ApplicationArea = All;
+
+}
+
+}
+
+}
+
+}
+
+}
+
+Considerazioni
+
+Piu o meno ci siamo..
+
+E avanti così…
+
+#10 – Saluti, Well done, thanks!
+You’re welcome! I’m glad I could help. If you have any other questions, don’t hesitate to ask!
+
+Considerazioni finali
+Diciamo che è ancora migliorabile ma qualcosa ha fatto, sicuramente utile per il copywriter e per ricercare informazioni, attendiamo presto chat GPT-4!
