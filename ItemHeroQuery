@@ -1,0 +1,171 @@
+query 50100 "Item hero query"
+{
+    QueryType = Normal;
+    // CaptionML =
+    //   ENU = 'Item hero query (the caption)'
+    // , DAN = 'Item hero query (overskrift)'
+    // ;
+    Caption = 'Analyze your inventory';
+
+    AboutTitleML =
+      ENU = 'Analyze your inventory (slice and dice your data)'
+    , DAN = 'Om salgsfakturaer'
+    ;
+
+    // AboutTextML =
+    //   ENU = 'Best query ever'
+    // , DAN = 'Den bedste query i verden'
+    // ;
+
+    AboutText = 'Use this data cube to analyze your inventory. You can group and/or the data on any dimension you like.';
+
+    ContextSensitiveHelpPage = 'business-central/inventory-wms-reports';
+
+    QueryCategory = 'Item List';
+    UsageCategory = ReportsAndAnalysis;
+
+    elements
+    {
+        dataitem(Item_Table; Item)
+        {
+            column(No; "No.")
+            {
+                Caption = 'Item No.';
+            }
+
+            column(ItemDescription; Description)
+            {
+                Caption = 'Item description';
+            }
+
+            column(Item_DiscountGroup; "Item Disc. Group")
+            {
+                Caption = 'Item discount group';
+            }
+
+            column(Blocked; Blocked)
+            {
+                Caption = 'Is item blocked?';
+            }
+
+            column(Base_Unit_of_Measure; "Base Unit of Measure") { }
+
+            column(Type; Type) { }
+
+            column(Costing_Method; "Costing Method") { }
+
+            column(Unit_Cost; "Unit Cost") { }
+
+            column(Standard_Cost; "Standard Cost") { }
+
+            column(ItemCategory_Field; "Item Category Code") { }
+
+            column(Cost_is_Adjusted; "Cost is Adjusted") { }
+
+            column(Tariff_No_; "Tariff No.") { }
+
+            dataitem(ItemCategory_Table; "Item Category")
+            {
+                DataItemLink = "Code" = Item_Table."Item Category Code";
+                SqlJoinType = InnerJoin;
+
+                column(ItemIndentation; Indentation) { }
+
+                column(ItemCategoryDecription; "Description")
+                {
+                    Caption = 'Item category description';
+                }
+
+                column(ParentCategory; "Parent Category")
+                {
+                    Caption = 'Item parent category code';
+                }
+
+                //     dataitem(ItemCategoryParent_Table; "Item Category")
+                //     {
+                //         DataItemLink = "Code" = ItemCategory_Table."Parent Category";
+                //         SqlJoinType = LeftOuterJoin;
+
+                //         column(ItemCategoryParentIndentation; Indentation) { }
+
+                //         column(ItemCategoryParentDecription; "Description")
+                //         {
+                //             Caption = 'Item category parent description';
+                //         }
+
+                //         // if we had computed columns available in AL queries, we could compute 
+                //         // the flattened category level0-level4 for the Item parent-child category
+                //         // CategoryLevel0 = find the category with indentention == 0
+                //         // CategoryLevel1 = find the category with indentention == 1
+                //         // CategoryLevel2 ...
+                //         // CategoryLevel3 ...
+                //         // CategoryLevel4 ...
+                //         // Maybe add support for hiding columns that were only used in computed columns
+
+                dataitem(ItemLedgerEntry_Table; "Item Ledger Entry")
+                {
+                    DataItemLink = "Item No." = Item_Table."No.";
+                    SqlJoinType = InnerJoin;
+                    // 1968-S
+                    column(Location_Code; "Location Code")
+                    {
+                        Caption = 'Location Code';
+                    }
+
+                    column(CostAmountActual; "Cost Amount (Actual)")
+                    {
+                        Caption = 'Cost Amount - Actual';
+
+                    }
+
+                    column(PurchaseAmountActual; "Purchase Amount (Actual)")
+                    {
+                        Caption = 'Purchase Amount - Actual';
+                    }
+
+                    column(aa; Description)
+                    {
+                        Caption = 'Item ledger description';
+                    }
+
+                    column(Remaining_Quantity; "Remaining Quantity")
+                    {
+                        Caption = 'Remaining Quantity';
+                    }
+
+
+                    dataitem(Location_Table; "Location")
+                    {
+                        DataItemLink = "Code" = ItemLedgerEntry_Table."Location Code";
+                        SqlJoinType = LeftOuterJoin;
+
+                        column(Location_name; "Name")
+                        {
+                            Caption = 'Location Name';
+                        }
+
+                        column(Location_city; "City")
+                        {
+                            Caption = 'Location City';
+                        }
+                        column(Location_country; "Country/Region Code")
+                        {
+                            Caption = 'Location Country Code';
+                        }
+
+                        // dataitem(Country_Table; "Country/Region")
+                        // {
+                        //     DataItemLink = "Code" = Location_Table."Country/Region Code";
+                        //     SqlJoinType = LeftOuterJoin;
+
+                        //     column(Country_name; "Name")
+                        //     {
+                        //         Caption = 'Country Name';
+                        //     }
+                        // }
+                    }
+                }
+            }
+        }
+    }
+}
