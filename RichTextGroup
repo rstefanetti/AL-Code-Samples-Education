@@ -1,0 +1,57 @@
+tableextension 50112 CustomerExt extends Customer
+{
+    fields
+    {
+        field(50100; RichText; Blob)
+        {
+            Caption = 'Rich Text';
+            DataClassification = CustomerContent;
+        }
+    }
+}
+pageextension 50100 CustomerCardExt extends "Customer Card"
+{
+    layout
+    {
+        addafter(General)
+        {
+            group(RichTextGroup)
+            {
+                Caption = 'Rich Text Group';
+                field(RichText; RichTextVar)
+                {
+                    Caption = 'Rich Text';
+                    MultiLine = true;
+                    ExtendedDatatype = RichContent;
+                    ApplicationArea = All;
+                    trigger OnValidate()
+                    begin
+                        SetRichText();
+                    end;
+                }
+            }
+        }
+    }
+    var
+        RichTextVar: Text;
+    trigger OnOpenPage()
+    begin
+        GetRichText();
+    end;
+    local procedure GetRichText()
+    var
+        RichTextInS: InStream;
+    begin
+        Rec.CalcFields(RichText);
+        Rec.RichText.CreateInStream(RichTextInS, TextEncoding::UTF8);
+        RichTextInS.Read(RichTextVar);
+    end;
+    local procedure SetRichText()
+    var
+        RichTextOutS: OutStream;
+    begin
+        Rec.RichText.CreateOutStream(RichTextOutS, TextEncoding::UTF8);
+        RichTextOutS.Write(RichTextVar);
+        Rec.Modify(true);
+    end;
+}
