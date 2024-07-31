@@ -1,0 +1,207 @@
+// TXT Labels Codeunit
+codeunit 50000 “TXT Labels”
+
+{
+
+    trigger OnRun()
+
+    begin
+
+    end;
+
+//Functions
+//Use Textbuilder to create TXT file
+
+    procedure CeateETI_TXTFile(parETIType: Text[20]; parNo: code[20]; parFreeLabl: Boolean;
+
+                                        recItemJnlBuffer: Record “Item Journal Buffer”)
+
+    var
+
+        TempBlob: Codeunit “Temp Blob”;
+
+        InS: InStream;
+
+        OutS: OutStream;
+
+        FileName: Text;
+
+        TxtBuilder: TextBuilder; //Use TextBuilder class to create the TXT file
+
+        LabelsSetup: Record “Labels Setup”;
+
+        SavePath: Text[200];
+
+        BatchPath: Text[200];
+
+        recProductionOrder: Record “Production Order”;
+
+        AzureDate: text[10];
+
+        AzureTime: text[10];
+
+        PrinterName: Text[50];
+
+    begin
+
+        //Clear Var
+
+        SavePath := ”;
+
+        BatchPath := ”;
+
+        AzureDate := ”;
+
+        AzureTime := ”;
+
+        //Export Production TXT
+
+        LabelsSetup.Get();
+
+        Case parETIType of
+
+            ‘Production’:
+
+                begin
+
+                    //Production ETI
+
+                    SavePath := LabelsSetup.”Path Bart Production Labels”;
+
+                    BatchPath := LabelsSetup.”Path Bart Produ. Labels Batch”;
+
+                    PrinterName := LabelsSetup.”Production Labels Printer”;
+
+                    If recProductionOrder.Get(recProductionOrder.Status::Released, parNo) then begin
+
+//Use text builder to create TXT file
+
+                        TxtBuilder.AppendLine(‘%BTW% /AF=”‘ + BatchPath + ‘”‘ + ‘ /P /D=”<Trigger File Name>” /R=3 /PRN=’ + ‘”‘ + PrinterName + ‘”‘);
+
+                        TxtBuilder.AppendLine(‘ %END%’);
+
+                        TxtBuilder.AppendLine(‘”barcode_richiesta”,”colore”,”commessa”,”lega”,”nota”,”data_creazione”‘);                    
+
+                        TxtBuilder.AppendLine(‘”‘ + recProductionOrder.”No.” + ‘”,”‘ + ‘CNC’ + ‘”,”‘ + recProductionOrder.”Source No.” + ‘”,”‘ + recProductionOrder.Description + ‘”,”‘ + Format(recProductionOrder.”Creation Date”) + ‘”‘);
+
+        end;
+
+        AzureDate := Copystr(Format(CurrentDateTime), 1, 2) + ‘_’ + Copystr(Format(CurrentDateTime), 4, 2) + ‘_’ + Copystr(Format(CurrentDateTime), 7, 2);
+
+        AzureTime := Copystr(Format(CurrentDateTime), 10, 2) + ‘_’ + Copystr(Format(CurrentDateTime), 13, 2);
+
+        FileName := ‘ETI’ + ‘_’ + AzureDate + ‘_’ + AzureTime + ‘.txt’;
+
+        //Create the TXT file
+
+        TempBlob.CreateOutStream(OutS);
+
+        OutS.WriteText(TxtBuilder.ToText());
+
+        TempBlob.CreateInStream(InS);
+
+        // ** SAVE FILE **
+
+        // Download the file and save to browser local path
+
+        if LabelsSetup.”Save to FileSystem” then
+
+            DownloadFromStream(InS, ”, ”, ”, FileName);
+
+        // Send file to Azure Share  
+
+        if LabelsSetup.”Save to Azure Share” then
+
+            SendETITXTFiletoAzureCloudShare(FileName, InS);
+
+    //Send file to Azure Cloud Share
+
+    procedure SendETITXTFiletoAzureCloudShare(parFileName: Text[200]; parInstream: InStream)
+
+    var
+
+        InS: InStream;
+
+        OutS: OutStream;
+
+        TxtBuilder: TextBuilder;
+
+        Filestream: InStream;
+
+        Filename: text[200];
+
+        Filepath: text[200];
+
+        LabelsSetup: Record “Labels Setup”;
+
+        //Azure File Share Connection
+
+        StorageServiceAuthorization: Codeunit “Storage Service Authorization”;
+
+        AzureStorageAccount: Text[100];
+
+        AzureFileshare: Text[100];
+
+        AzureSAASToken: Text[200];   // SAASToken variable –
+
+    begin
+
+        //** test Azure share connection
+
+        /*AzureSAASToken := ‘sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2024-07-25T17:21:35Z&st=2024-07-25T09:21:35Z&spr=https,http&sig=Lnorxz4oeuilzt1hN77VQAGkHnzYawGM5juxCNn3puc%3D’;
+
+        AzureStorageAccount := ‘filesharetxt’;  //storage account name
+
+        AzureFileshare := ‘txt\txt’; //** file save directory **
+
+        //Azure File Share Connection
+
+        if LabelsSetup.Get() then begin
+
+            AzureSAASToken := LabelsSetup.”Azure SAS Token”;
+
+            AzureStorageAccount := LabelsSetup.”Azure Storage Account”;
+
+            AzureFileshare := LabelsSetup.”Azure File Share”;
+
+        end;
+
+//Write to Azure File Share by Token
+
+WriteFileToAzureShare(AzureStorageAccount, AzureFileshare, StorageServiceAuthorization.UseReadySAS(AzureSAASToken), parFileName, parInstream);
+
+        Message(‘File %1 saved to Azure File Share succesfully’, parFileName);
+
+    end;
+
+//Write to Azure File Share by Authorization
+
+procedure WriteFileToAzureShare(StorageAccount: Text[100]; Fileshare: Text[100]; Authorization: Interface “Storage Service Authorization”;  FilePath: Text[200]; var FileContent: InStream)
+
+    var
+
+        AFSFileClient: Codeunit “AFS File Client”;
+
+        AFSOperationResponse: Codeunit “AFS Operation Response”;
+
+    begin
+
+        AFSFileClient.Initialize(StorageAccount, Fileshare, Authorization);
+
+        AFSOperationResponse := AFSFileClient.CreateFile(FilePath, FileContent);
+
+        if not AFSOperationResponse.IsSuccessful() then
+
+            Error(AFSOperationResponse.GetError());
+
+        AFSOperationResponse := AFSFileClient.PutFileStream(FilePath, FileContent);
+
+        if not AFSOperationResponse.IsSuccessful() then
+
+            Error(AFSOperationResponse.GetError());
+
+    end;
+
+}
+
+ 
