@@ -1,0 +1,24 @@
+Mount a disk drive from Powershell
+
+iIt’s possible to map the storage share as a network disk directly from powershell, convenient in persistent mode to be able to use it as a local disk.
+
+Scenario It is possible to write\read from AL in the share for bidirectional file exchange.
+
+# Connect to Storage Account
+
+$connectTestResult = Test-NetConnection -ComputerName filesharetxt123.file.core.windows.net -Port 445
+
+if ($connectTestResult.TcpTestSucceeded) {
+
+# Save the password so the drive will persist on reboot
+
+cmd.exe /C “cmdkey /add:`”filesharetxt123.file.core.windows.net`” /user:`”localhost\filesharetxt123`” /pass:`”B3HqxWpdaAQb3dEoy"
+# Mount the drive (ex W:\) – persistent mode
+
+New-PSDrive -Name W -PSProvider FileSystem -Root “\\filesharetxt123.file.core.windows.net\txt” -Persist
+
+} else {
+
+Write-Error -Message “Unable to reach the Azure storage account via port 445. Check to make sure your organization or ISP is not blocking port 445, or use Azure P2S VPN, Azure S2S VPN, or Express Route to tunnel SMB traffic over a different port.”
+
+}
