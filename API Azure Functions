@@ -1,0 +1,440 @@
+** API Azure Functions - BLOB STORAGE ** 
+
+codeunit 60350 "API Azure Functions"
+{
+    procedure ReadAzureFile(pFileShareURI: Text[250]; pFileName: Text[250]; pKey: Text[250]; var pTempBlob: Codeunit "Temp Blob"; var pCreationDate: Text)
+    var
+        HClient: HttpClient;
+        HResponse: HttpResponseMessage;
+        IsSuccess: Boolean;
+        StatusCode: Integer;
+        ResponseStrm: InStream;
+        OutStrm: OutStream;
+        URIString: Text;
+        HeaderString: array[10] of Text;
+    begin
+        HClient.Clear();
+        HClient.DefaultRequestHeaders.Add('User-Agent', 'Dynamics 365');
+        HClient.DefaultRequestHeaders.TryAddWithoutValidation('Content-Type', 'application/json;charset=utf-8');
+        HClient.DefaultRequestHeaders.Add('Connection', 'close');
+
+        URIString := pFileShareURI + pFileName + '?' + pKey;
+
+        IsSuccess := HClient.Get(URIString, HResponse);
+
+        if not IsSuccess then
+            Message('An API call with the provided header has failed.');
+
+        if not HResponse.IsSuccessStatusCode() then begin
+            StatusCode := HResponse.HttpStatusCode();
+            Message('The request has failed with status code ' + Format(StatusCode));
+            IsSuccess := false;
+        end;
+
+        if not HResponse.Content().ReadAs(ResponseStrm) then begin
+            Message('The response message cannot be processed.');
+            IsSuccess := false;
+        end;
+
+        if not IsSuccess then
+            Error('API call failed!');
+
+        pTempBlob.CreateOutStream(OutStrm);
+        CopyStream(OutStrm, ResponseStrm);
+
+        HResponse.Headers.GetValues('x-ms-file-creation-time', HeaderString);
+        pCreationDate := HeaderString[1];
+
+    end;
+
+    procedure WriteAzureFile(pFileShareURI: Text[250]; pFileName: Text[250]; pKey: Text[250]; pTempBlob: Codeunit "Temp Blob")
+    var
+        TempBlobList: Codeunit "Temp Blob List";
+        TempBlob: Codeunit "Temp Blob";
+        HClient: HttpClient;
+        HContent: HttpContent;
+        HContentHeaders: HttpHeaders;
+        HResponse: HttpResponseMessage;
+        IsSuccess: Boolean;
+        StatusCode: Integer;
+        ResponseStream: InStream;
+        TotalBytes: Integer;
+        URIString: Text;
+        WriteLbl: Label 'comp=range&', Locked = true;
+        InStrm: InStream;
+        i: Integer;
+        BlobLength: Integer;
+        ByteStart: Integer;
+        ByteEnd: Integer;
+    begin
+
+        TotalBytes := pTempBlob.Length();
+
+        HClient.Clear();
+        HContent.Clear();
+
+        HContent.GetHeaders(HContentHeaders);
+        HContentHeaders.Clear();
+        HContentHeaders.Remove('Content-Type');
+
+        HClient.DefaultRequestHeaders.Add('x-ms-type', 'file');
+        HClient.DefaultRequestHeaders.Add('x-ms-file-permission', 'inherit');
+        HClient.DefaultRequestHeaders.Add('x-ms-file-attributes', 'none');
+        HClient.DefaultRequestHeaders.Add('x-ms-file-creation-time', 'now');
+        HClient.DefaultRequestHeaders.Add('x-ms-file-last-write-time', 'now');
+        HClient.DefaultRequestHeaders.Add('x-ms-content-length', Format(TotalBytes));
+        HClient.DefaultRequestHeaders.Add('x-ms-content-type', 'text/plain; charset=UTF-8');
+
+        URIString := pFileShareURI + pFileName + '?' + pKey;
+
+        IsSuccess := HClient.Put(URIString, HContent, HResponse);
+
+        if not IsSuccess then
+            Message('An API call with the provided header has failed.');
+
+        if not HResponse.IsSuccessStatusCode() then begin
+            StatusCode := HResponse.HttpStatusCode();
+            Message('The request has failed with status code ' + Format(StatusCode));
+            IsSuccess := false;
+        end;
+
+        if not HResponse.Content().ReadAs(ResponseStream) then begin
+            Message('The response message cannot be processed.');
+            IsSuccess := false;
+        end;
+
+        if not IsSuccess then
+            Error('API call failed!');
+
+        SplitBLOB(pTempBlob, 2000000, TempBlobList);
+
+        ByteStart := 0;
+
+        for i := 1 to TempBlobList.Count() do begin
+
+            TempBlobList.Get(i, TempBlob);
+            BlobLength := TempBlob.Length();
+            TempBlob.CreateInStream(InStrm);
+
+            ByteEnd := ByteStart + BlobLength - 1;
+
+            HClient.Clear();
+            HContent.Clear();
+
+            HContent.WriteFrom(InStrm);
+
+            HContent.GetHeaders(HContentHeaders);
+            HContentHeaders.Clear();
+            HContentHeaders.Remove('Content-Type');
+            HContentHeaders.Add('Content-Length', Format(BlobLength));
+
+            HClient.DefaultRequestHeaders.Add('x-ms-write', 'update');
+            HClient.DefaultRequestHeaders.Add('x-ms-type', 'file');
+            HClient.DefaultRequestHeaders.Add('x-ms-file-permission', 'inherit');
+            HClient.DefaultRequestHeaders.Add('x-ms-file-attributes', 'none');
+            //HClient.DefaultRequestHeaders.Add('x-ms-file-creation-time', 'now');
+            //HClient.DefaultRequestHeaders.Add('x-ms-file-last-write-time', 'now');
+            HClient.DefaultRequestHeaders.Add('x-ms-range', 'bytes=' + Format(ByteStart) + '-' + Format(ByteEnd));
+            HClient.DefaultRequestHeaders.Add('x-ms-content-type', 'text/plain; charset=UTF-8');
+
+            URIString := pFileShareURI + pFileName + '?' + WriteLbl + pKey;
+
+            IsSuccess := HClient.Put(URIString, HContent, HResponse);
+
+            if not IsSuccess then
+                Message('An API call with the provided header has failed.');
+
+            if not HResponse.IsSuccessStatusCode() then begin
+                StatusCode := HResponse.HttpStatusCode();
+                Message('The request has failed with status code ' + Format(StatusCode));
+                IsSuccess := false;
+            end;
+
+            if not HResponse.Content().ReadAs(ResponseStream) then begin
+                Message('The response message cannot be processed.');
+                IsSuccess := false;
+            end;
+
+            if not IsSuccess then
+                Error('API call failed!');
+
+            ByteStart := ByteEnd + 1;
+
+        end;
+
+    end;
+
+    procedure CopyAzureFile(pFileShareURI_In: Text[250]; pFileName_In: Text[250]; pKey_In: Text[250]; pFileShareURI_Out: Text[250]; pFileName_Out: Text[250]; pKey_Out: Text[250])
+    var
+        HClient: HttpClient;
+        HContent: HttpContent;
+        HContentHeaders: HttpHeaders;
+        HResponse: HttpResponseMessage;
+        IsSuccess: Boolean;
+        StatusCode: Integer;
+        ResponseStream: InStream;
+        URIString_In: Text;
+        URIString_Out: Text;
+    begin
+
+        URIString_In := pFileShareURI_In + pFileName_In + '?' + pKey_In;
+        URIString_Out := pFileShareURI_Out + pFileName_Out + '?' + pKey_Out;
+
+        HClient.Clear();
+        HContent.Clear();
+
+        HContent.GetHeaders(HContentHeaders);
+        HContentHeaders.Clear();
+        HContentHeaders.Remove('Content-Type');
+
+        HClient.DefaultRequestHeaders.Add('x-ms-date', 'now');
+        HClient.DefaultRequestHeaders.Add('x-ms-version', '2015-04-05');
+        HClient.DefaultRequestHeaders.Add('x-ms-copy-source', URIString_In);
+        HClient.DefaultRequestHeaders.Add('x-ms-type', 'file');
+
+
+        IsSuccess := HClient.Put(URIString_Out, HContent, HResponse);
+
+        if not IsSuccess then
+            Message('An API call with the provided header has failed.');
+
+        if not HResponse.IsSuccessStatusCode() then begin
+            StatusCode := HResponse.HttpStatusCode();
+            Message('The request has failed with status code ' + Format(StatusCode));
+            IsSuccess := false;
+        end;
+
+        if not HResponse.Content().ReadAs(ResponseStream) then begin
+            Message('The response message cannot be processed.');
+            IsSuccess := false;
+        end;
+
+        if not IsSuccess then
+            Error('API call failed!');
+
+    end;
+
+    procedure DeleteAzureFile(pFileShareURI: Text[250]; pFileName: Text[250]; pKey: Text[250])
+    var
+        HClient: HttpClient;
+        HResponse: HttpResponseMessage;
+        IsSuccess: Boolean;
+        StatusCode: Integer;
+        ResponseStrm: InStream;
+        URIString: Text;
+    begin
+        HClient.Clear();
+        HClient.DefaultRequestHeaders.Add('User-Agent', 'Dynamics 365');
+        HClient.DefaultRequestHeaders.TryAddWithoutValidation('Content-Type', 'application/json;charset=utf-8');
+        HClient.DefaultRequestHeaders.Add('Connection', 'close');
+
+        URIString := pFileShareURI + pFileName + '?' + pKey;
+
+        IsSuccess := HClient.Delete(URIString, HResponse);
+
+        if not IsSuccess then
+            Message('An API call with the provided header has failed.');
+
+        if not HResponse.IsSuccessStatusCode() then begin
+            StatusCode := HResponse.HttpStatusCode();
+            Message('The request has failed with status code ' + Format(StatusCode));
+            IsSuccess := false;
+        end;
+
+        if not HResponse.Content().ReadAs(ResponseStrm) then begin
+            Message('The response message cannot be processed.');
+            IsSuccess := false;
+        end;
+
+        if not IsSuccess then
+            Error('API call failed!');
+
+    end;
+
+    procedure FileExist(pFileShareURI: Text[250]; pFileName: Text[250]; pKey: Text[250]): Boolean
+    var
+        TempAzureFileList: Record "API Azure File List" temporary;
+    begin
+        GetFileList(pFileShareURI, pKey, TempAzureFileList);
+
+        TempAzureFileList.SetRange(Type, TempAzureFileList.Type::File);
+        TempAzureFileList.SetRange("Full Name", pFileName);
+        exit(not TempAzureFileList.IsEmpty);
+    end;
+
+    procedure OpenFileList(pFileShareURI: Text[250]; pKey: Text[250])
+    var
+        TempAzureFileList: Record "API Azure File List" temporary;
+    begin
+        GetFileList(pFileShareURI, pKey, TempAzureFileList);
+
+        if TempAzureFileList.IsEmpty then begin
+            TempAzureFileList.Init();
+            TempAzureFileList."Entry No." := 1;
+            TempAzureFileList.Type := TempAzureFileList.Type::Directory;
+            TempAzureFileList."Azure URI" := pFileShareURI;
+            TempAzureFileList."Azure Key" := pKey;
+            TempAzureFileList."Full Name" := '...';
+            TempAzureFileList.Insert();
+        end;
+
+        Page.RunModal(Page::"API Azure File List", TempAzureFileList)
+
+    end;
+
+    procedure GetFileList(pFileShareURI: Text[250]; pKey: Text[250]; var pFileList: Record "API Azure File List")
+    var
+        TempXMLBuffer: Record "XML Buffer" temporary;
+        TempBlob: Codeunit "Temp Blob";
+        HClient: HttpClient;
+        HResponse: HttpResponseMessage;
+        IsSuccess: Boolean;
+        StatusCode: Integer;
+        ResponseStrm: InStream;
+        XmlStrm: InStream;
+        OutStrm: OutStream;
+        URIString: Text;
+        XmlDoc: XmlDocument;
+        EntryNo: Integer;
+        DotPos: Integer;
+        i: Integer;
+        MarkerString: Text;
+    begin
+
+        MarkerString := '';
+        EntryNo := 0;
+
+        repeat
+
+            Clear(TempXMLBuffer);
+            Clear(TempBlob);
+            Clear(XmlDoc);
+            TempXMLBuffer.DeleteAll();
+
+            HClient.Clear();
+            HClient.DefaultRequestHeaders.Add('User-Agent', 'Dynamics 365');
+            HClient.DefaultRequestHeaders.TryAddWithoutValidation('Content-Type', 'application/json;charset=utf-8');
+            HClient.DefaultRequestHeaders.Add('Connection', 'close');
+
+            URIString := pFileShareURI + '?restype=directory&comp=list' + MarkerString + '&' + pKey;
+
+            IsSuccess := HClient.Get(URIString, HResponse);
+
+            if not IsSuccess then
+                Message('An API call with the provided header has failed.');
+
+            if not HResponse.IsSuccessStatusCode() then begin
+                StatusCode := HResponse.HttpStatusCode();
+                Message('The request has failed with status code ' + Format(StatusCode));
+                IsSuccess := false;
+            end;
+
+            if not HResponse.Content().ReadAs(ResponseStrm) then begin
+                Message('The response message cannot be processed.');
+                IsSuccess := false;
+            end;
+
+            if not IsSuccess then
+                Error('API call failed!');
+
+            if not XmlDocument.ReadFrom(ResponseStrm, XmlDoc) then
+                Message('Cannot read XML response.');
+
+            TempBlob.CreateOutStream(OutStrm);
+            XmlDoc.WriteTo(OutStrm);
+            TempBlob.CreateInStream(XmlStrm);
+
+            TempXMLBuffer.LoadFromStream(XmlStrm);
+
+            if TempXMLBuffer.findset() then
+                repeat
+                    case TempXMLBuffer.Name of
+                        'File':
+                            begin
+                                if EntryNo > 0 then
+                                    pFileList.Insert();
+                                EntryNo += 1;
+                                pFileList.Init();
+                                pFileList."Entry No." := EntryNo;
+                                pFileList.Type := pFileList.Type::File;
+                                pFileList."Azure URI" := pFileShareURI;
+                                pFileList."Azure Key" := pKey;
+                            end;
+
+                        'Directory':
+                            begin
+                                if EntryNo > 0 then
+                                    pFileList.Insert();
+                                EntryNo += 1;
+                                pFileList.Init();
+                                pFileList."Entry No." := EntryNo;
+                                pFileList.Type := pFileList.Type::Directory;
+                            end;
+
+                        'Name':
+                            begin
+                                pFileList."Full Name" := TempXMLBuffer.Value;
+                                DotPos := 0;
+                                if pFileList.Type = pFileList.Type::File then begin
+                                    for i := StrLen(pFileList."Full Name") downto 1 do begin
+                                        if (CopyStr(pFileList."Full Name", i, 1) = '.') and (DotPos = 0) then
+                                            DotPos := i;
+                                    end;
+                                    if DotPos <> 0 then begin
+                                        if DotPos < StrLen(pFileList."Full Name") then
+                                            pFileList."File Type" := CopyStr(pFileList."Full Name", DotPos + 1, 50);
+                                        if DotPos > 1 then
+                                            pFileList."File Name" := CopyStr(pFileList."Full Name", 1, DotPos - 1);
+                                    end;
+                                end;
+                            end;
+
+                        'Content-Length':
+                            begin
+                                if not Evaluate(pFileList.Length, TempXMLBuffer.Value) then
+                                    pFileList.Length := -1;
+                            end;
+
+                        'NextMarker':
+                            begin
+                                if TempXMLBuffer.Value <> '' then
+                                    MarkerString := '&marker=' + TempXMLBuffer.Value
+                                else
+                                    MarkerString := '';
+                            end;
+
+                    end;
+
+                until TempXMLBuffer.Next() = 0;
+
+        until MarkerString = '';
+
+        if EntryNo > 0 then
+            pFileList.Insert();
+    end;
+
+    local procedure SplitBLOB(OriginempBlob: Codeunit "Temp Blob"; SplitBlobLength: Integer; var SplitBlobList: Codeunit "Temp Blob List")
+    var
+        TempBlob: Codeunit "Temp Blob";
+        i: Integer;
+        SplitBlobListDimension: Integer;
+        LastBlobLength: Integer;
+        SubStreamLength: Integer;
+        InStrm: InStream;
+        OutStrm: OutStream;
+    begin
+        SplitBlobListDimension := OriginempBlob.Length() DIV SplitBlobLength + 1;
+        SubStreamLength := SplitBlobLength;
+        LastBlobLength := OriginempBlob.Length() MOD SplitBlobLength;
+
+        OriginempBlob.CreateInStream(InStrm);
+        for i := 1 to SplitBlobListDimension do begin
+            Clear(TempBlob);
+            TempBlob.CreateOutStream(OutStrm);
+            if i = SplitBlobListDimension then
+                SubStreamLength := LastBlobLength;
+            CopyStream(OutStrm, InStrm, SubStreamLength);
+            SplitBlobList.Add(TempBlob);
+        end;
+    end;
+}
