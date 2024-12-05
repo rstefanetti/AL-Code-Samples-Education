@@ -1,0 +1,132 @@
+#Azure File Share examples
+
+//Azure File Share Connection
+Namespace: System.Azure.Storage.Files – Provides functionality to access the Azure File Storage.
+StorageServiceAuthorization: Codeunit "Storage Service Authorization";
+
+Best Methods
+- Initialize
+- ListDirectory
+- GetFileAsStream
+- CreateFile
+- PutFileStream
+- DeleteFile
+
+
+Source blog
+https://robertostefanettinavblog.com/2024/12/04/business-central-codeunit-afs-file-client-usable-with-saas-token-and-shared-key/
+https://robertostefanettinavblog.com/2024/07/30/business-central-save-files-to-azure-share-from-al-using-sas/
+
+
+Initialize – Initializes the AFS Client
+
+procedure Initialize(StorageAccount: Text, FileShare: Text, Authorization: Interface “Storage Service Authorization”)
+
+CreateFile – Creates a file in the file share. This does not fill in the file content, it only initializes the file.
+
+procedure CreateFile(FilePath: Text, InStream: InStream): Codeunit “AFS Operation Response”
+
+GetFileAsFile – Receives a file as a File from a file share. The file will be downloaded through the browser.
+
+procedure GetFileAsFile(FilePath: Text): Codeunit “AFS Operation Response”
+
+GetFileAsStream – Receives a file as a stream from a file share.
+
+procedure GetFileAsStream(FilePath: Text, var TargetInStream: InStream): Codeunit “AFS Operation Response”
+
+PutFileStream – Uploads a file to the file share from instream.
+
+procedure PutFileStream(FilePath: Text, var SourceInStream: InStream): Codeunit “AFS Operation Response”
+
+PutFileText – Uploads a file to the file share from text.
+
+procedure PutFileText(FilePath: Text, SourceText: Text): Codeunit “AFS Operation Response”
+
+DeleteFile – Deletes a file from the file share.
+
+procedure DeleteFile(FilePath: Text): Codeunit “AFS Operation Response”
+
+ListDirectory – Lists files and directories from the file share.
+
+procedure ListDirectory(DirectoryPath: Text[2048], var AFSDirectoryContent: Record “AFS Directory Content” temporary): Codeunit “AFS Operation Response”
+
+CreateDirectory – Creates directory on the file share.
+
+procedure CreateDirectory(DirectoryPath: Text): Codeunit “AFS Operation Response”
+
+DeleteDirectory – Deletes an empty directory from the file share.
+
+procedure DeleteDirectory(DirectoryPath: Text): Codeunit “AFS Operation Response”
+
+CopyFile – Copies a file on the file share.
+
+procedure CopyFile(SourceFileURI: Text, DestinationFilePath: Text): Codeunit “AFS Operation Response”
+
+RenameFile – Renames a file on the file share.
+
+procedure RenameFile(SourceFilePath: Text, DestinationFilePath: Text): Codeunit “AFS Operation Response”
+
+
+
+Methods
+
+    //Initialize Connection
+    AFSFileClient.Initialize(AzureStorageAccount, AzureFileshare, StorageServiceAuthorization.UseReadySAS(AzureSAASToken));
+
+    //List files in directory
+    AFSOperationResponse := AFSFileClient.ListDirectory(SavePath, TempAFSDirectoryContent);
+   
+    //Read Files only - not directories
+    TempAFSDirectoryContent.SetRange("Resource Type", TempAFSDirectoryContent."Resource Type"::File);
+
+
+    //WriteFileToShare
+    procedure WriteFileToShare(StorageAccount: Text; FileShare: Text; Authorization: Interface "Storage Service Authorization"; FilePath: Text; var FileContent: InStream)
+    var
+        AFSFileClient: Codeunit "AFS File Client";
+        AFSOperationResponse: Codeunit "AFS Operation Response";
+    begin
+        AFSFileClient.Initialize(StorageAccount, FileShare, Authorization);
+        AFSOperationResponse := AFSFileClient.CreateFile(FilePath, FileContent);
+        if not AFSOperationResponse.IsSuccessful() then
+            Error(AFSOperationResponse.GetError());
+
+        AFSOperationResponse := AFSFileClient.PutFileStream(FilePath, FileContent);
+        if not AFSOperationResponse.IsSuccessful() then
+            Error(AFSOperationResponse.GetError());
+    end;
+
+   //Write to Azure File Share by Token
+   WriteFileToAzureSharebySAS(parAzureStorageAccount, parAzureFileshare,
+                              StorageServiceAuthorization.UseReadySAS(parAzureSAASToken), parFileName, parInstream);
+
+    //Initialize Connection
+    AFSFileClient.Initialize(AzureStorageAccount, AzureFileshare, StorageServiceAuthorization.UseReadySAS(AzureSAASToken));
+    //List files in directory
+    AFSOperationResponse := AFSFileClient.ListDirectory(SavePath, TempAFSDirectoryContent);
+
+    //GetFilesInFolder
+    procedure GetFilesInFolder(StorageAccount: Text;
+        FileShare: Text;
+        Authorization: Interface "Storage Service Authorization";
+        DirectoryPath: Text[2048]): List of [Text[2048]]
+    var
+        AFSDirectoryContent: Record "AFS Directory Content";
+        AFSFileClient: Codeunit "AFS File Client";
+        AFSOperationResponse: Codeunit "AFS Operation Response";
+        FileNames: List of [Text[2048]];
+
+    begin
+        AFSOperationResponse := AFSFileClient.ListDirectory(DirectoryPath, AFSDirectoryContent);
+        if not AFSOperationResponse.IsSuccessful() then
+            Error(AFSOperationResponse.GetError());
+
+        AFSDirectoryContent.SetRange("Resource Type", AFSDirectoryContent."Resource Type"::File);
+        if AFSDirectoryContent.FindSet() then
+            repeat
+                FileNames.Add(AFSDirectoryContent."Full Name");
+            until AFSDirectoryContent.Next() = 0;
+
+        exit(FileNames);
+    end;
+
