@@ -1,0 +1,35 @@
+procedure GetItemAttribute()
+    var
+        ItemAttributeMapping: Record "Item Attribute Value Mapping";
+        ItemAttrValueTranslation: Record "Item Attribute Translation";
+        ItemAttributeValue: Record "Item Attribute Value";
+        ItemAttribute: Record "Item Attribute";
+
+    begin
+        ItemAttribute.SETRANGE(Name, 'xx-filer-xx');
+        IF NOT ItemAttribute.FINDFIRST() THEN
+            EXIT;
+        ItemAttributeMapping.RESET();
+        ItemAttributeMapping.SETRANGE("Table ID", 27);
+        ItemAttributeMapping.SETRANGE("No.", DocumentLine."No.");
+        ItemAttributeMapping.SETRANGE("Item Attribute ID", ItemAttribute.ID);
+        IF ItemAttributeMapping.FINDSET() THEN
+            REPEAT
+                ItemAttrDesc := '';
+                ItemAttributeValue.GET(ItemAttributeMapping."Item Attribute ID", ItemAttributeMapping."Item Attribute Value ID");
+                ItemAttributeValue.CALCFIELDS("Attribute Name");
+                IF (DocumentHeader."Language Code" <> '') THEN BEGIN
+                    IF ItemAttrValueTranslation.GET(ItemAttributeMapping."Item Attribute ID", ItemAttributeMapping."Item Attribute Value ID", DocumentHeader."Language Code") THEN
+                        IF ItemAttrValueTranslation.Name <> '' THEN
+                            ItemAttrDesc := ItemAttributeValue."Attribute Name" + ': ' + ItemAttrValueTranslation.Name;
+                    IF (ItemAttrDesc = '') THEN
+                        IF ItemAttrValueTranslation.GET(ItemAttributeMapping."Item Attribute ID", ItemAttributeMapping."Item Attribute Value ID", DocumentHeader."Language Code") THEN
+                            IF ItemAttrValueTranslation.Name <> '' THEN
+                                ItemAttrDesc := ItemAttributeValue."Attribute Name" + ': ' + ItemAttrValueTranslation.Name;
+                END;
+                IF ItemAttrDesc = '' THEN
+                    IF ItemAttributeValue.Value <> '' THEN
+                        ItemAttrDesc := ItemAttributeValue."Attribute Name" + ': ' + ItemAttributeValue.Value;
+
+            UNTIL ItemAttributeMapping.NEXT() = 0;
+    end;
