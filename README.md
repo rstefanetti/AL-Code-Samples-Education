@@ -1,8 +1,10 @@
+***************************************
 **** AL Code Samples for Education ****
+***************************************
 
-#each branch is a separate sample
+#each branch is a separate sample (like a folder)
 
-by RSB
+
+my new blog
 https://blogbcrs.wordpress.com
-
-
+github.com/rstefanetti 
