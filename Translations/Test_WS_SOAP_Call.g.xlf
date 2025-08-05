@@ -1,0 +1,1154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Test_WS_SOAP_Call">
+    <body>
+      <group id="body">
+        <trans-unit id="Codeunit 1732355894 - Method 1612543870" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CreateSOAPMessage</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SOAP Document - Method CreateSOAPMessage</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1732355894 - Method 1503744891" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CreateSOAPDocument</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SOAP Document - Method CreateSOAPDocument</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1732355894 - Method 2222249442" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CreateSOAPDocumentBody</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SOAP Document - Method CreateSOAPDocumentBody</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1732355894 - Method 597112330" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CreateEnvelope</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SOAP Document - Method CreateEnvelope</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1732355894 - Method 3085394092" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CreateHeader</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SOAP Document - Method CreateHeader</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1732355894 - Method 3824019103" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CreateBody</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SOAP Document - Method CreateBody</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3748093050 - Method 2945058479" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LoadXMLandCallWS</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit WS_SOAP_Handling - Method LoadXMLandCallWS</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 3290102807" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AddElement</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method AddElement</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 2680210423" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AddRootElement</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method AddRootElement</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 3723763348" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AddRootElementWithPrefix</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method AddRootElementWithPrefix</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 3950331100" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AddElementWithPrefix</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method AddElementWithPrefix</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 3968770403" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AddPrefix</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method AddPrefix</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 2755046228" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AddAttribute</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method AddAttribute</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 3063019960" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AddAttributeWithNamespace</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method AddAttributeWithNamespace</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 2254653456" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FindNode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method FindNode</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 4117441317" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FindNodeWithNameSpace</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method FindNodeWithNameSpace</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 2071307295" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FindNodesWithNameSpace</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method FindNodesWithNameSpace</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 3778464866" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FindNodesWithNamespaceManager</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method FindNodesWithNamespaceManager</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 1606172385" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FindNodeXML</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method FindNodeXML</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 2518202155" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FindNodeText</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method FindNodeText</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 2466671080" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FindNodeTextWithNameSpace</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method FindNodeTextWithNameSpace</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 2249574047" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FindNodeTextNs</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method FindNodeTextNs</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 2552746278" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FindNodes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method FindNodes</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 1138227371" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GetRootNode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method GetRootNode</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 2948970301" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FindAttribute</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method FindAttribute</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 3010556281" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GetAttributeValue</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method GetAttributeValue</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 3959558206" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AddDeclaration</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method AddDeclaration</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 3234222188" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AddGroupNode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method AddGroupNode</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 3082774983" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AddNode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method AddNode</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 3642239369" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AddLastNode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method AddLastNode</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 111695534" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GetXmlNSMgr</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method GetXmlNSMgr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 1169112660" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AddNameSpace</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method AddNameSpace</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 3716211195" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AddNamespaces</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method AddNamespaces</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 2811720781" size-unit="char" translate="yes" xml:space="preserve">
+          <source>XMLEscape</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method XMLEscape</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 2726651733" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LoadXMLDocumentFromText</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method LoadXMLDocumentFromText</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 1396907455" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LoadXMLNodeFromText</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method LoadXMLNodeFromText</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 1902887140" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LoadXMLDocumentFromInStream</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method LoadXMLDocumentFromInStream</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 3682349730" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LoadXMLNodeFromInStream</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method LoadXMLNodeFromInStream</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 3346209573" size-unit="char" translate="yes" xml:space="preserve">
+          <source>RemoveNamespaces</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method RemoveNamespaces</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 3440536538" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SetUTF88Declaration</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method SetUTF88Declaration</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 1287781423" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ReplaceInvalidXMLCharacters</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method ReplaceInvalidXMLCharacters</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1039320817 - Method 806176372" size-unit="char" translate="yes" xml:space="preserve">
+          <source>RemoveXMLRestrictedCharacters</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit XML DOM Mgt. - Method RemoveXMLRestrictedCharacters</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test WS SOAP - DOM XML</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Property 3446740159" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Property EntityCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Property 3863440606" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Property AdditionalSearchTerms</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Property 631549417" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Property EntitySetCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 1477568301 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action processing - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 1720901350 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Create Soap Message - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 1720901350 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Create Soap Message - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 1720901350 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Create Soap Message - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 1720901350 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create Soap Message</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Create Soap Message - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 1338673734 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Promoted - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3306084698 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category10 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3306084698 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category10 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3306084698 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category10 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3306084698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 10</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category10 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2668388081 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category11 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2668388081 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category11 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2668388081 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category11 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2668388081 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 11</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category11 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2030691464 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category12 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2030691464 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category12 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2030691464 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category12 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2030691464 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 12</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category12 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 1392994847 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category13 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 1392994847 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category13 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 1392994847 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category13 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 1392994847 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 13</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category13 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 1561903870 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category14 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 1561903870 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category14 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 1561903870 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category14 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 1561903870 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 14</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category14 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 924207253 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category15 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 924207253 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category15 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 924207253 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category15 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 924207253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 15</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category15 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 286510636 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category16 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 286510636 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category16 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 286510636 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category16 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 286510636 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 16</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category16 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3943781315 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category17 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3943781315 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category17 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3943781315 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category17 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3943781315 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 17</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category17 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 4112690338 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category18 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 4112690338 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category18 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 4112690338 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category18 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 4112690338 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 18</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category18 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3474993721 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category19 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3474993721 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category19 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3474993721 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category19 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3474993721 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 19</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category19 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3565820967 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category20 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3565820967 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category20 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3565820967 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category20 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3565820967 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 20</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category20 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 1587086413 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category4 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 1587086413 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category4 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 1587086413 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category4 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 1587086413 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 4</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category4 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2224783030 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category5 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2224783030 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category5 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2224783030 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category5 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2224783030 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 5</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category5 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 311693179 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category6 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 311693179 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category6 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 311693179 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category6 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 311693179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 6</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category6 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 949389796 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category7 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 949389796 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category7 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 949389796 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category7 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 949389796 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 7</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category7 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2524661601 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category8 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2524661601 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category8 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2524661601 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category8 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2524661601 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 8</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category8 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3162358218 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category9 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3162358218 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category9 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3162358218 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category9 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3162358218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 9</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Category9 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 278110413 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_New - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 278110413 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_New - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 278110413 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_New - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 278110413 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_New - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3383493608 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Process - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3383493608 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Process - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3383493608 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Process - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 3383493608 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Process</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Process - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2234406979 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Report - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2234406979 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Report - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2234406979 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Report - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2838908524 - Action 2234406979 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reports</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SOAP Test Page - Action Category_Report - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test WS SOAP - httpClient</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Property 3446740159" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Property EntityCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Property 3863440606" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Property AdditionalSearchTerms</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Property 631549417" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Property EntitySetCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3862845261 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Processing - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 608241747 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Test SOAP WS Connection - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 608241747 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Test SOAP WS Connection - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 608241747 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Test SOAP WS Connection - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 608241747 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test SOAP WS Connection</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Test SOAP WS Connection - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 1338673734 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Promoted - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3306084698 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category10 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3306084698 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category10 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3306084698 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category10 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3306084698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 10</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category10 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2668388081 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category11 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2668388081 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category11 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2668388081 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category11 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2668388081 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 11</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category11 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2030691464 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category12 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2030691464 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category12 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2030691464 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category12 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2030691464 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 12</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category12 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 1392994847 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category13 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 1392994847 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category13 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 1392994847 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category13 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 1392994847 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 13</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category13 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 1561903870 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category14 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 1561903870 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category14 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 1561903870 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category14 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 1561903870 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 14</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category14 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 924207253 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category15 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 924207253 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category15 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 924207253 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category15 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 924207253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 15</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category15 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 286510636 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category16 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 286510636 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category16 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 286510636 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category16 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 286510636 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 16</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category16 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3943781315 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category17 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3943781315 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category17 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3943781315 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category17 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3943781315 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 17</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category17 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 4112690338 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category18 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 4112690338 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category18 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 4112690338 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category18 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 4112690338 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 18</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category18 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3474993721 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category19 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3474993721 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category19 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3474993721 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category19 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3474993721 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 19</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category19 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3565820967 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category20 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3565820967 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category20 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3565820967 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category20 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3565820967 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 20</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category20 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 1587086413 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category4 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 1587086413 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category4 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 1587086413 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category4 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 1587086413 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 4</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category4 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2224783030 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category5 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2224783030 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category5 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2224783030 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category5 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2224783030 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 5</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category5 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 311693179 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category6 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 311693179 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category6 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 311693179 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category6 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 311693179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 6</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category6 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 949389796 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category7 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 949389796 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category7 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 949389796 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category7 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 949389796 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 7</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category7 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2524661601 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category8 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2524661601 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category8 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2524661601 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category8 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2524661601 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 8</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category8 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3162358218 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category9 - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3162358218 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category9 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3162358218 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category9 - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3162358218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category 9</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Category9 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 278110413 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_New - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 278110413 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_New - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 278110413 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_New - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 278110413 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_New - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3383493608 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Process - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3383493608 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Process - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3383493608 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Process - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 3383493608 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Process</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Process - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2234406979 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Report - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2234406979 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Report - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2234406979 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Report - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 408558713 - Action 2234406979 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reports</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page test_WS_SOAP - Action Category_Report - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 4285830208 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GeneratedPermission</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet GeneratedPermission - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
