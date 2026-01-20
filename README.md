@@ -9,10 +9,15 @@ Autore: Roberto Stefanetti (MCT)
 
 Elenco branch (nome branch — breve descrizione / file principali trovati)
 •	AL-AI_PromptPage — Esempio pagina con prompt AI; file: GetAddressService_AL_DEMO_EXPLAINED.docx, GetInterface.al, PromptItemSubProposal.al, intDemoInterface.al, README.md
+
 •	AL-API-Azure-Functions---Blob-Handling — Esempio chiamate API verso Azure Functions / Blob; file: README.md, "API Azure Functions"
+
 •	AL-APIs-Demo — Demo API; file: GetAddressService_AL_DEMO_EXPLAINED.docx, README.md
+
 •	AL-APPUpdater-AL-Gettoken — Demo updater / get token; file: APICalls.Codeunit.al, COHUB_Auth.Table.al, COHUBext.PageExt.al, app.json, extensionsPermissionSet.xml, .app, README.md
+
 •	AL-AddField_inTable_Fieldgroup — Esempio aggiunta campo e fieldgroup; file: AddFieldinTableFieldgroup, README.md
+
 •	AL-AddMenuMenustoNavigationandActionsArea — Esempio modifica menu/navigation/actions; file: AL Menu.txt, README.md
 •	AL-Addins — Esempio add-in / JS addin; file: Pg50010.TestPageWithAddin.al, ctrAddinSample.al, script.js, skin.css, startup.js, TestImage.png, GetAddressService_AL_DEMO_EXPLAINED.docx, README.md
 •	AL-Afs-AzureFileShare — Metodi per Azure File Share; file: AzureShareMethods, README.md
